@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>WEBCREATION | We will manage your IT projects </title>
+    <link rel="icon" href="images/W.png" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Kyros - Personal Website" name="description" />
+    <meta content="" name="keywords" />
+    <meta content="" name="author" />
+    <!-- CSS Files
+    ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap" />
+    <link href="css/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <style>
+        :root {
+            --primary-color: #1D57C4;
+            --primary-color-rgb: 217, 84, 53;
+        }
+    </style>
+    <link href="css/coloring.css" rel="stylesheet" type="text/css" data-color="#D95435" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".de_modal").click(function () {
+
+                var description = $(this).closest('.item').find('p').text();
+                $('#addText').text(description);
+
+                var tech = $(this).closest('.item').find('img').attr('data-tech');
+                $('.de_project-details .tech span').text(tech);
+
+                var preview = $(this).closest('.item').find('img').attr('data-preview');
+                $('.de_project-details .preview a').attr('href', preview);
+
+                var tools = $(this).closest('.item').find('img').attr('data-tools');
+                $('.de_project-details .tools span').text(tools);
+
+                var github = $(this).closest('.item').find('img').attr('data-github');
+                $('.de_project-details .github a').attr('href', github);
+
+                var src = $(this).closest('.item').find('img').attr('data-path');
+                $('#de_modal-content img').attr('src', src);
+
+                if (preview == "") {
+                    $(".de_project-details .preview").css("display", "none");
+                    $(".de_project-details .github").css("display", "");
+                }
+
+                if (github == "") {
+                    $(".de_project-details .github").css("display", "none");
+                    $(".de_project-details .preview").css("display", "");
+                }
+
+            });
+        });
+    </script>
+</head>
+
+<body class="onepage">
+    <div id="wrapper">
+        <header class="transparent header-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <div class="de-flex-col">
+                                    <div id="logo">
+                                        <a href="#">
+                                            <img alt="" class="logo-2" src="images/logo2.png" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="de-flex-col header-col-right">
+                                <ul id="mainmenu">
+                                    <li><a class="active" href="#top">Home<span></span></a></li>
+                                    <li><a href="#section-about">About me<span></span></a></li>
+                                    <li><a href="#section-services">What I Do<span></span></a></li>
+                                    <li><a href="#section-portfolio">Portfolio<span></span></a></li>
+                                    <li><a href="#section-blog">Services<span></span></a></li>
+                                    <li><a href="#section-contact">Contact Me<span></span></a></li>
+                                </ul>
+                                <div class="menu_side_area">
+                                    <span id="menu-btn"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="no-bottom no-top" id="content">
+            <div id="top"></div>
+
+            <div class="float-text">
+                <div class="de_social-icons">
+                    <a href="#"><i class="fa fa-whatsapp fa-lg"></i></a>
+                </div>
+                <span>Follow Me</span>
+            </div>
+
+            <div id="de_modal" style="background-size: cover;">
+                <button class="button-close"></button>
+                <div class="d-modal-loader" style="background-size: cover; display: block;">
+                    <div id="de_modal-content" class="container">
+                        <div class="row g-5">
+                            <div class="col-lg-8">
+                                <img src="images/1.png" alt="" class="img-fluid">
+                            </div>
+
+                            <div class="col-lg-4 de_project-info">
+                                <h3>Description</h3>
+                                <p id="addText"></p>
+
+                                <div class="de_project-details">
+                                    <div class="d-field tech">
+                                        <i class="fa fa-user-o"></i>Technology: <span></span>
+                                    </div>
+                                    <div class="d-field tools">
+                                        <i class="fa fa-file-text-o"></i>Tools: <span></span>
+                                    </div>
+                                    <div class="d-field preview">
+                                        <i class="fa fa-external-link"></i>Preview: <span><a href="">Get to
+                                                see</a></span>
+                                    </div>
+                                    <div class="d-field github">
+                                        <i class="fa fa-calendar-o"></i>Depot Github: <span><a href="">Get to
+                                                see</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="modal" style="background-size: cover;">
+                <div id="modal-loader" style="background-size: cover; display: block;">
+                </div>
+            </div>
+
+            <section aria-label="section" class="jarallax no-top no-bottom">
+                <img src="images/test.png" class="jarallax-img" alt="">
+
+                <div class="v-center">
+                    <div class="container mt-5">
+                        <div class="row align-items-center ">
+                            <div class="col-md-7">
+                                <h5 class="s1 wow fadeInUp" data-wow-delay=".4s">Welcome on WEBCREATION</h5>
+                                <div class="spacer-10"></div>
+                                <div class="h1 wow fadeInUp" data-wow-delay=".6s">
+                                    Hi, I'm <span class="id-color-2">Julian ADJIBI</span> <br class="sm-hide">a
+                                    <div class="typed-strings">
+                                        <p>Freelancer.</p>
+                                        <p>Programmer.</p>
+                                        <p>WordPress Developer</p>
+                                    </div>
+                                    <div class="typed"></div>
+                                </div>
+
+                                <div class="spacer-10"></div>
+                                <a class="btn-main wow fadeInUp" data-wow-delay=".6s" href="#section-services">What I
+                                    Do</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#section-about" class="mouse-icon-click scroll-to wow fadeInUp" data-wow-delay=".8s">
+                    <span class="mouse fadeScroll relative" data-scroll-speed="10">
+                        <span class="scroll"></span>
+                    </span>
+                </a>
+                <div class="de-gradient-edge-bottom"></div>
+            </section>
+
+            <section id="section-about">
+                <div class="container relative">
+                    <div class="row">
+                        <div class="col-md-12 text-center wow fadeInUp">
+                            <h2>About Me</h2>
+                            <div class="space-border"></div>
+                        </div>
+                        <!-- <div class="col-md-8 offset-md-2 text-start wow fadeInUp">
+                            <p> I'm a graduate in Computer Engineering, and webmaster with almost 3 years of experience.
+                            </p>
+                            <p>My main skills are the creation of websites and web applications, either with the CMS
+                                Wordpress or using web development technologies requiring programming. I have a complete
+                                mastery of HTML5, CSS, PHP, Javascript and I am also very comfortable with the Laravel
+                                and Bootstrap frameworks.</p>
+                            <p>Having a website is not enough if it is not referenced. So I offer my services of web
+                                content writing for a quality natural referencing. I am attentive and I give a capital
+                                importance to the satisfaction of the customer. My pleasure is to have satisfied
+                                customers of my services, do not hesitate to contact me I answer in the hour.</p>
+                        </div> -->
+
+                        <div class="col-lg-12 position-relative text-start wow fadeIn" data-wow-delay=".2s">
+                                    <p> I'm a graduate in Computer Engineering, and webmaster with almost 3 years of experience. 
+                                        My main skills are the creation of websites and web applications, either with the CMS
+                                        Wordpress or using web development technologies requiring programming. I have a complete
+                                        mastery of HTML5, CSS, PHP, Javascript and I am also very comfortable with the Laravel
+                                        and Bootstrap frameworks. <br>
+                                        Having a website is not enough if it is not referenced. So I offer my services of web
+                                        content writing for a quality natural referencing. I am attentive and I give a capital
+                                        importance to the satisfaction of the customer. My pleasure is to have satisfied
+                                        customers of my services, do not hesitate to contact me I answer in the hour.
+                                    </p>
+
+                        </div>
+                        <div class="spacer-single"></div>
+
+                        <div class="col-md-12 text-center wow fadeInUp">
+                            <h2>Languages</h2>
+                            <div class="space-border"></div>
+                        </div>
+
+                        <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".2s">
+                            <div class="position-relative">
+                                <div class="progressbar" data-animate="false">
+                                    <div class="circle" data-percent="99">
+                                        <div></div>
+                                    </div>
+                                    <h4>HTML</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".2s">
+                            <div class="position-relative">
+                                <div class="progressbar" data-animate="false">
+                                    <div class="circle" data-percent="99">
+                                        <div></div>
+                                    </div>
+                                    <h4>CSS</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".2s">
+                            <div class="position-relative">
+                                <div class="progressbar" data-animate="false">
+                                    <div class="circle" data-percent="95">
+                                        <div></div>
+                                    </div>
+                                    <h4>JAVASCRIPT</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".2s">
+                            <div class="position-relative">
+                                <div class="progressbar" data-animate="false">
+                                    <div class="circle" data-percent="95">
+                                        <div></div>
+                                    </div>
+                                    <h4>PHP</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="spacer-single"></div>
+                        <div class="col-md-12 text-center wow fadeInUp">
+                            <h2>Frameworks et CMS</h2>
+                            <div class="space-border"></div>
+                        </div>
+
+                        <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".2s">
+                            <div class="position-relative">
+                                <div class="progressbar" data-animate="false">
+                                    <div class="circle" data-percent="99">
+                                        <div></div>
+                                    </div>
+                                    <h4>BOOTSTRAP</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".4s">
+                            <div class="position-relative">
+                                <div class="progressbar" data-animate="false">
+                                    <div class="circle" data-percent="95">
+                                        <div></div>
+                                    </div>
+                                    <h4>JQUERY</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".6s">
+                            <div class="position-relative">
+                                <div class="progressbar" data-animate="false">
+                                    <div class="circle" data-percent="95">
+                                        <div></div>
+                                    </div>
+                                    <h4>LARAVEL</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".8s">
+                            <div class="position-relative">
+                                <div class="progressbar" data-animate="false">
+                                    <div class="circle" data-percent="95">
+                                        <div></div>
+                                    </div>
+                                    <h4>WORDPRESS</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-services" class="no-bottom">
+                <div class="container relative">
+                    <div class="row">
+                        <div class="col-md-12 text-center wow fadeInUp">
+                            <h2>What I Do</h2>
+                            <div class="space-border"></div>
+                        </div>
+                        <div class="spacer-single"></div>
+                        <div class="row g-0">
+                            <div class="col-lg-4 wow fadeIn" data-wow-delay=".2s">
+                                <div class="de_3d-box">
+                                    <div class="d-inner">
+                                        <i class="icon_genius id-color-2"></i>
+                                        <div class="text">
+                                            <h3>Web Application</h3>
+                                            I will create your complete web application coupled with your
+                                            and adapted to all screen formats (responsive) with Larael
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 wow fadeIn" data-wow-delay=".4s">
+                                <div class="de_3d-box">
+                                    <div class="d-inner">
+                                        <i class="icon_tools id-color-2"></i>
+                                        <div class="text">
+                                            <h3>WordPress Site</h3>
+                                            I will build your website with WordPress. Whether it's an e-commerce site, storefront, magazine or blog, or your landing page
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 wow fadeIn" data-wow-delay=".6s">
+                                <div class="de_3d-box">
+                                    <div class="d-inner">
+                                        <i class="icon_camera_alt id-color-2"></i>
+                                        <div class="text">
+                                            <h3>Customized features</h3>
+                                            I will add custom features to your
+                                            WordPress site, or to your Laravel application
+                                            or do a complete redesign of your website.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section-portfolio" class="no-bottom">
+                <div class="container relative">
+                    <div class="row">
+                        <div class="col-md-12 text-center wow fadeInUp">
+                            <h2>Portfolio</h2>
+                            <div class="space-border"></div>
+                        </div>
+                    </div>
+                    <div id="gallery" class="row sequence">
+                        <div class="col-md-4 item wow">
+                            <div class="de_modal">
+                                <div class="card-image-1" data-tilt>
+                                    <div class="d-text">
+                                        <h3>Rental Management</h3>
+                                    </div>
+                                    <img src="images/scan7.png" data-preview="" data-path="images/6.jpg"
+                                        data-github="https://github.com/webcreation-dev/Rental-Management/tree/master"
+                                        data-tech="Laravel" data-tools="HTML CSS PHP JAVASCRIPT" class="img-fluid"
+                                        alt="">
+                                    <p style="display: none;">It is a platform for the management of a company
+                                        specialized in renting cars, apartments, audio-visual materials and
+                                        materials, audio visuals, and many other products. More specifically, its
+                                        customer management
+                                        management, its rental management, its inventory management, its revenue
+                                        management
+                                        and collections management. It offers the possibility to have a visibility of
+                                        of the activity related to the cash desk (cash in/out) and to be notified of
+                                        of each operation carried out, an e-mail at the end of the day and a report on
+                                        the
+                                        rentals made (classified by product), the revenue made and what remains to be
+                                        remaining to be collected.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 item wow">
+                            <div class="de_modal">
+                                <div class="card-image-1" data-tilt>
+                                    <div class="d-text">
+                                        <h3>PRINT BAR</h3>
+                                    </div>
+                                    <img src="images/scan2.png" data-path="images/1.png" data-github=""
+                                        data-preview="https://theprintbar97.com/" data-tech="Laravel"
+                                        data-tools="HTML CSS PHP JAVASCRIPT" class="img-fluid" alt="">
+                                    <p style="display: none;">Print Bar is an e-commerce site where you can buy
+                                        you can buy a premium quality license plate online.
+                                        quality. They are available for any means of transportation, fully
+                                        fully customizable. The site has an integrated configurator allowing to
+                                        plates from A to Z according to the tastes of the customer and with many
+                                        options.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 item wow">
+                            <div class="de_modal">
+                                <div class="card-image-1" data-tilt>
+                                    <div class="d-text">
+                                        <h3>Répétiteurs Du Net</h3>
+                                    </div>
+                                    <img src="images/scan3.png" data-path="images/4.png" data-github=""
+                                        data-preview="https://repetiteursdunet.com/" data-tech="WordPress"
+                                        data-tools="PHP" class="img-fluid" alt="">
+                                    <p style="display: none;">It is an online learning platform, where students can sign
+                                        up to purchase courses and exercises in a specific subject, posted by an
+                                        instructor to whom students can submit their problems and concerns for
+                                        satisfaction. Students and instructors each have their own dashboard to manage
+                                        their purchases and course or exercise submissions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 item wow">
+                            <div class="de_modal">
+                                <div class="card-image-1" data-tilt>
+                                    <div class="d-text">
+                                        <h3>WAZEMI</h3>
+                                    </div>
+                                    <img src="images/scan7.png" data-path="images/6.jpg" data-preview=""
+                                        data-github="https://github.com/webcreation-dev/WAZEMI_PROJECT/tree/master"
+                                        data-tech="Laravel" data-tools="HTML CSS PHP JAVASCRIPT" class="img-fluid"
+                                        alt="">
+                                    <p style="display: none;">This project is a web application that offers
+                                        transportation services
+                                        transportation services (Motorcycle and Car). It allows you to make reservations
+                                        at any time of the day.
+                                        any time of the day. Its main features are:
+                                        Make a reservation - Rate a driver - Collect information about the customer
+                                        collecting information about the customer - recommendation system for customers
+                                        - calculation of the route
+                                        Calculating the route and estimating the price of the transport</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 item wow">
+                            <div class="de_modal">
+                                <div class="card-image-1" data-tilt>
+                                    <div class="d-text">
+                                        <h3>BNT Academy</h3>
+                                    </div>
+                                    <img src="images/scan1.png" data-path="images/2.png" data-github=""
+                                        data-preview="https://academy.bntgroup.net/" data-tech="Laravel"
+                                        data-tools="HTML CSS PHP JAVASCRIPT" class="img-fluid" alt="">
+                                    <p style="display: none;">Bnt Academy is a platform where are available
+                                        digital training courses in all areas of computer science are available to learn
+                                        and
+                                        to which one can subscribe to learn and make a career in the field
+                                        in the field of your choice.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 item wow">
+                            <div class="de_modal">
+                                <div class="card-image-1" data-tilt>
+                                    <div class="d-text">
+                                        <h3>Site Des Bons Plans</h3>
+                                    </div>
+                                    <img src="images/scan5.png" data-path="images/3.png" data-github=""
+                                        data-preview="http://s905731302.onlinehome.fr/" data-tech="WordPress"
+                                        data-tools="HTML CSS PHP" class="img-fluid" alt="">
+                                    <p style="display: none;">It is a website to which you can subscribe to stay
+                                        informed
+                                        informed of the Good Plans and Events of Libourne and its surroundings, to have
+                                        special offers, discounts, destocking, novelties, exclusivities, but also
+                                        ideas for outings for young and old. It also has a system of
+                                        event planner with email sending.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 item wow">
+                            <div class="de_modal">
+                                <div class="card-image-1" data-tilt>
+                                    <div class="d-text">
+                                        <h3>Convert HTML To WordPress</h3>
+                                    </div>
+                                    <img src="images/scan7.png" data-path="images/6.jpg" data-preview=""
+                                        data-github="https://github.com/webcreation-dev/Convert-HTML-to-WordPress"
+                                        data-tech="WordPress" data-tools="HTML CSS PHP" class="img-fluid" alt="">
+                                    <p style="display: none;">This is a detailed project that explains the conversion of
+                                        an
+                                        HTML template into a WordPress Theme</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 item wow">
+                            <div class="de_modal">
+                                <div class="card-image-1" data-tilt>
+                                    <div class="d-text">
+                                        <h3>KALIZA</h3>
+                                    </div>
+                                    <img src="images/scan4.png" data-path="images/5.png" data-github=""
+                                        data-preview="http://kaliza.io/en/" data-tech="WordPress"
+                                        data-tools="HTML CSS JAVASCRIPT" class="img-fluid" alt="">
+                                    <p style="display: none;">This is a landing page that presents the crypto currency
+                                        Kaliza, the history of its creation until its launch.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section id="section-fun-facts" aria-label="section" class="jarallax">
+                <div class="de-gradient-edge-top"></div>
+                <img src="images/records2.jpg" class="jarallax-img" alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 wow fadeIn" data-wow-delay="0">
+                            <div class="de_count text-center">
+                                <h3 class="timer" data-to="8240" data-speed="2500">0</h3>
+                                <span>Hours of Works</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 wow fadeIn" data-wow-delay=".25s">
+                            <div class="de_count text-center">
+                                <h3 class="timer" data-to="315" data-speed="2500">0</h3>
+                                <span>Projects Done</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 wow fadeIn" data-wow-delay=".5s">
+                            <div class="de_count text-center">
+                                <h3 class="timer" data-to="250" data-speed="2500">0</h3>
+                                <span>Satisfied Customers</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 wow fadeIn" data-wow-delay=".75s">
+                            <div class="de_count text-center">
+                                <h3 class="timer" data-to="32" data-speed="2500">0</h3>
+                                <span>Awards Winning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="de-gradient-edge-bottom"></div>
+            </section> -->
+
+            <section id="section-blog" class="no-bottom">
+                <div class="container relative">
+                    <div class="row">
+                        <div class="col-md-12 text-center wow fadeInUp">
+                            <h2>My 5euros services</h2>
+                            <div class="space-border"></div>
+                        </div>
+                    </div>
+                    <div id="carousel-blog" class="owl-carousel wow fadeInUp">
+                        <div class="bloglist item">
+                            <div class="post-content">
+                                <div class="post-image">
+                                    <div class="" data-url="single-blog.html">
+                                        <img alt="" src="images/service3.png" class="lazy">
+                                    </div>
+                                </div>
+                                <div class="post-text">
+                                    <h4 class="" data-url="single-blog.html">Start your Professional Blog with WordPress</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bloglist item">
+                            <div class="post-content">
+                                <div class="post-image">
+                                    <div class="" data-url="single-blog.html">
+                                        <img alt="" src="images/service4.png" class="lazy">
+                                    </div>
+                                </div>
+                                <div class="post-text">
+                                    <h4 class="" data-url="single-blog.html">Start your Landing Page with WoorPress
+
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bloglist item">
+                            <div class="post-content">
+                                <div class="post-image">
+                                    <div class="" data-url="single-blog.html">
+                                        <img alt="" src="images/service1.png" class="lazy">
+                                    </div>
+                                </div>
+                                <div class="post-text">
+                                    <h4 class="" data-url="single-blog.html">Launch your Ecommerce site with Woocommerce
+                                    </h4>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bloglist item">
+                            <div class="post-content">
+                                <div class="post-image">
+                                    <div class="" data-url="single-blog.html">
+                                        <img alt="" src="images/service5.png" class="lazy">
+                                    </div>
+                                </div>
+                                <div class="post-text">
+                                    <h4 class="" data-url="single-blog.html">Add New Features on your WordPress Site</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bloglist item">
+                            <div class="post-content">
+                                <div class="post-image">
+                                    <div class="" data-url="single-blog.html">
+                                        <img alt="" src="images/service2.png" class="lazy">
+                                    </div>
+                                </div>
+                                <div class="post-text">
+                                    <h4 class="" data-url="single-blog.html">Start your Showcase Site with WordPress
+                                    </h4>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-contact" class="jarallax">
+                <div class="de-gradient-edge-top"></div>
+                <img src="contact.jpg" class="jarallax-img" alt="">
+                <div class="container z-index-1000">
+                    <div class="row">
+                        <div class="col-md-12 text-center wow fadeInUp">
+                            <h2>Contact Me</h2>
+                            <div class="space-border"></div>
+                        </div>
+                        <div class="col-lg-12 wow fadeInUp">
+                            <div class="contact_form_wrapper">
+                                <form name="contactForm" id="contact_form" class="form-border" method="post" action="#">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="field-set">
+                                                <input type="text" name="Name" id="name" class="form-control"
+                                                    placeholder="Your Name" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="field-set">
+                                                <input type="text" name="Email" id="email" class="form-control"
+                                                    placeholder="Your Email" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="field-set">
+                                                <input type="text" name="phone" id="phone" class="form-control"
+                                                    placeholder="Your Phone" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="field-set">
+                                            <textarea name="message" id="message" class="form-control"
+                                                placeholder="Your Message" required></textarea>
+                                        </div>
+                                        <div class="g-recaptcha" data-sitekey="copy-your-site-key-here"></div>
+                                        <div id='submit' class="mt10">
+                                            <input type='submit' id='send_message' value='Send Message'
+                                                class="btn-main">
+                                        </div>
+
+                                        <div id="success_message" class='success'>
+                                            Your message has been sent successfully. Refresh this page if you want to
+                                            send more messages.
+                                        </div>
+                                        <div id="error_message" class='error'>
+                                            Sorry there was an error sending your form.
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="spacer-double"></div>
+                            <div class="row text-center wow fadeInUp">
+                                <div class="col-md-6">
+                                    <div class="wm-1"></div>
+                                    <h6>Email Me</h6>
+                                    <p>a.julian@bntgroup.net</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="wm-1"></div>
+                                    <h6>Call Me</h6>
+                                    <p>+229 96 13 51 59</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="de-gradient-edge-bottom"></div>
+            </section>
+        </div>
+        <a href="#" id="back-to-top"></a>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="index.html">
+                            <span class="copy">&copy; Copyright 2022 - <strong>WEBCREATION</strong></span>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="social-icons">
+                            <a href="#"><i class="fa fa-whatsapp fa-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/designesia.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+    <script src="form.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            $(function () {
+                // jquery typed plugin
+                $(".typed").typed({
+                    stringsElement: $('.typed-strings'),
+                    typeSpeed: 100,
+                    backDelay: 500,
+                    loop: true,
+                    contentType: 'html', // or text
+                    // defaults to false for infinite loop
+                    loopCount: false,
+                    callback: function () { null; },
+                    resetCallback: function () { newTyped(); }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
