@@ -53,6 +53,10 @@
                     $(".de_project-details .github").css("display", "none");
                     $(".de_project-details .preview").css("display", "");
                 }
+                if ((github == "") && (preview == "")) {
+                    $(".de_project-details .github").css("display", "none");
+                    $(".de_project-details .preview").css("display", "none");
+                }
 
             });
         });
@@ -80,6 +84,7 @@
                                     <li><a class="active" href="#top">Home<span></span></a></li>
                                     <li><a href="#section-about">About me<span></span></a></li>
                                     <li><a href="#section-services">What I Do<span></span></a></li>
+                                    <li><a href="#section-fun-facts">My Experiences<span></span></a></li>
                                     <li><a href="#section-portfolio">Portfolio<span></span></a></li>
                                     <li><a href="#section-blog">Services<span></span></a></li>
                                     <li><a href="#section-contact">Contact Me<span></span></a></li>
@@ -358,7 +363,51 @@
                     </div>
                 </div>
             </section>
-            <section id="section-portfolio" class="no-bottom">
+
+            <section id="section-fun-facts" aria-label="section" class="jarallax">
+                <div class="de-gradient-edge-top"></div>
+                <img src="records2.jpg" class="jarallax-img" alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center wow fadeInUp">
+                            <h2>My Experiences</h2>
+                            <div class="space-border"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3 wow fadeIn" data-wow-delay="0">
+                            <div class="de_count text-center">
+                                <h3 class="timer" data-to="8" data-speed="2500">0</h3>
+                                <span>SKILLS</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 wow fadeIn" data-wow-delay=".25s">
+                            <div class="de_count text-center">
+                                <h3 class="timer" data-to="10" data-speed="2500">0</h3>
+                                <span>PROJECTS DONE</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 wow fadeIn" data-wow-delay=".5s">
+                            <div class="de_count text-center">
+                                <h3 class="timer" data-to="15" data-speed="2500">0</h3>
+                                <span>SATISFIED CUSTOMERS</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 wow fadeIn" data-wow-delay=".75s">
+                            <div class="de_count text-center">
+                                <h3 class="timer" data-to="3" data-speed="2500">0</h3>
+                                <span>YEARS EXPERIENCE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-portfolio" style="padding:35px 0 35px 0 !important;" class="no-bottom">
                 <div class="container relative">
                     <div class="row">
                         <div class="col-md-12 text-center wow fadeInUp">
@@ -410,14 +459,15 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="col-md-4 item wow">
+                        <div class="col-md-4 item wow">
                             <div class="de_modal">
                                 <div class="card-image-1" data-tilt>
                                     <div class="d-text">
                                         <h3>Répétiteurs Du Net</h3>
+                                        <h5 class="d-tag">Currently in production</h5>
                                     </div>
                                     <img src="images/scan3.png" data-path="images/4.png" data-github=""
-                                        data-preview="https://repetiteursdunet.com/" data-tech="WordPress"
+                                        data-preview="" data-tech="WordPress"
                                         data-tools="PHP" class="img-fluid" alt="">
                                     <p style="display: none;">It is an online learning platform, where students can sign
                                         up to purchase courses and exercises in a specific subject, posted by an
@@ -426,7 +476,7 @@
                                         their purchases and course or exercise submissions.</p>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                         <div class="col-md-4 item wow">
                             <div class="de_modal">
                                 <div class="card-image-1" data-tilt>
@@ -513,46 +563,26 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-md-4 item wow">
+                            <div class="de_modal">
+                                <div class="card-image-1" data-tilt>
+                                    <div class="d-text">
+                                        <h3>IXIOXI</h3>
+                                        <h5 class="d-tag">Currently in production</h5>
+                                    </div>
+                                    <img src="images/scan8.png" data-path="" data-github=""
+                                        data-preview="" data-tech="Laravel"
+                                        data-tools="HTML CSS PHP JAVASCRIPT" class="img-fluid" alt="">
+                                    <p style="display: none;"></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <!-- <section id="section-fun-facts" aria-label="section" class="jarallax">
-                <div class="de-gradient-edge-top"></div>
-                <img src="images/records2.jpg" class="jarallax-img" alt="">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 wow fadeIn" data-wow-delay="0">
-                            <div class="de_count text-center">
-                                <h3 class="timer" data-to="8240" data-speed="2500">0</h3>
-                                <span>Hours of Works</span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 wow fadeIn" data-wow-delay=".25s">
-                            <div class="de_count text-center">
-                                <h3 class="timer" data-to="315" data-speed="2500">0</h3>
-                                <span>Projects Done</span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 wow fadeIn" data-wow-delay=".5s">
-                            <div class="de_count text-center">
-                                <h3 class="timer" data-to="250" data-speed="2500">0</h3>
-                                <span>Satisfied Customers</span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 wow fadeIn" data-wow-delay=".75s">
-                            <div class="de_count text-center">
-                                <h3 class="timer" data-to="32" data-speed="2500">0</h3>
-                                <span>Awards Winning</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="de-gradient-edge-bottom"></div>
-            </section> -->
+           
 
             <section id="section-blog" class="no-bottom">
                 <div class="container relative">
@@ -644,7 +674,7 @@
                         </div>
                         <div class="col-lg-12 wow fadeInUp">
                             <div class="contact_form_wrapper">
-                                <form name="contactForm" id="contact_form" class="form-border" method="post" action="#">
+                                <form name="contactForm" id="contact_form" class="form-border" method="post" action="function2.php">
                                     <div class="row">
                                         <div class="col-md-4">
                                             <div class="field-set">
@@ -670,19 +700,18 @@
                                             <textarea name="message" id="message" class="form-control"
                                                 placeholder="Your Message" required></textarea>
                                         </div>
-                                        <!-- <div class="g-recaptcha" data-sitekey="copy-your-site-key-here"></div> -->
                                         <div id='submit' class="mt10">
-                                            <input type='submit' id='send_message' value='Send Message'
+                                            <input  type="submit" name="insert" id='send_message' value='Send Message'
                                                 class="btn-main">
                                         </div>
 
-                                        <div id="success_message" class='success'>
+                                        <!-- <div id="success_message" class='success'>
                                             Your message has been sent successfully. Refresh this page if you want to
                                             send more messages.
                                         </div>
                                         <div id="error_message" class='error'>
                                             Sorry there was an error sending your form.
-                                        </div>
+                                        </div> -->
 
                                     </div>
                                 </form>
