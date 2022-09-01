@@ -32,30 +32,36 @@
                 var tech = $(this).closest('.item').find('img').attr('data-tech');
                 $('.de_project-details .tech span').text(tech);
 
-                var preview = $(this).closest('.item').find('img').attr('data-preview');
-                $('.de_project-details .preview a').attr('href', preview);
-
                 var tools = $(this).closest('.item').find('img').attr('data-tools');
                 $('.de_project-details .tools span').text(tools);
 
-                var github = $(this).closest('.item').find('img').attr('data-github');
-                $('.de_project-details .github a').attr('href', github);
-
-                var src = $(this).closest('.item').find('img').attr('data-path');
-                $('#de_modal-content img').attr('src', src);
-
+                var preview = $(this).closest('.item').find('img').attr('data-preview');
+                $('.de_project-details .preview a').attr('href', preview);
                 if (preview == "") {
                     $(".de_project-details .preview").css("display", "none");
                     $(".de_project-details .github").css("display", "");
                 }
 
+                var github = $(this).closest('.item').find('img').attr('data-github');
+                $('.de_project-details .github a').attr('href', github);
                 if (github == "") {
                     $(".de_project-details .github").css("display", "none");
                     $(".de_project-details .preview").css("display", "");
                 }
+
                 if ((github == "") && (preview == "")) {
                     $(".de_project-details .github").css("display", "none");
                     $(".de_project-details .preview").css("display", "none");
+                }
+
+                var src = $(this).closest('.item').find('img').attr('data-path');
+                $('#de_modal-content img').attr('src', src);
+
+                var type = $(this).closest('.item').find('img').attr('data-type');
+                if (type == "5euros") {
+                    $(".de_project-info").css("display", "none");
+                }else {
+                    $(".de_project-info").css("display", "");
                 }
 
             });
@@ -113,7 +119,7 @@
                 <div class="d-modal-loader" style="background-size: cover; display: block;">
                     <div id="de_modal-content" class="container">
                         <div class="row g-5">
-                            <div class="col-lg-8">
+                            <div class="col-lg-8 ">
                                 <img src="images/1.png" alt="" class="img-fluid">
                             </div>
 
@@ -603,11 +609,11 @@
                         </div>
                     </div>
                     <div id="carousel-blog" class="owl-carousel wow fadeInUp">
-                        <div class="bloglist item">
+                        <div class="bloglist item de_modal">
                             <div class="post-content">
                                 <div class="post-image">
                                     <div class="" data-url="single-blog.html">
-                                        <img alt="" src="images/service3.png" class="lazy">
+                                        <img alt="" src="images/service3.png" data-path="images/coming-soon.jpg" data-type="5euros" class="lazy">
                                     </div>
                                 </div>
                                 <div class="post-text">
@@ -616,11 +622,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="bloglist item">
+                        <div class="bloglist item de_modal">
                             <div class="post-content">
                                 <div class="post-image">
                                     <div class="" data-url="single-blog.html">
-                                        <img alt="" src="images/service4.png" class="lazy">
+                                        <img alt="" src="images/service4.png" data-path="images/coming-soon.jpg" data-type="5euros" class="lazy">
                                     </div>
                                 </div>
                                 <div class="post-text">
@@ -630,11 +636,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="bloglist item">
+                        <div class="bloglist item de_modal">
                             <div class="post-content">
                                 <div class="post-image">
                                     <div class="" data-url="single-blog.html">
-                                        <img alt="" src="images/service1.png" class="lazy">
+                                        <img alt="" src="images/service1.png" data-path="images/coming-soon.jpg" data-type="5euros" class="lazy">
                                     </div>
                                 </div>
                                 <div class="post-text">
@@ -644,11 +650,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="bloglist item">
+                        <div class="bloglist item de_modal">
                             <div class="post-content">
                                 <div class="post-image">
                                     <div class="" data-url="single-blog.html">
-                                        <img alt="" src="images/service5.png" class="lazy">
+                                        <img alt="" src="images/service5.png" data-path="images/coming-soon.jpg" data-type="5euros" class="lazy">
                                     </div>
                                 </div>
                                 <div class="post-text">
@@ -657,11 +663,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="bloglist item">
+                        <div class="bloglist item de_modal">
                             <div class="post-content">
                                 <div class="post-image">
                                     <div class="" data-url="single-blog.html">
-                                        <img alt="" src="images/service2.png" class="lazy">
+                                        <img alt="" src="images/service2.png" data-path="images/coming-soon.jpg" data-type="5euros" class="lazy">
                                     </div>
                                 </div>
                                 <div class="post-text">
