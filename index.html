@@ -60,7 +60,7 @@
                 var type = $(this).closest('.item').find('img').attr('data-type');
                 if (type == "5euros") {
                     $(".de_project-info").css("display", "none");
-                }else {
+                } else {
                     $(".de_project-info").css("display", "");
                 }
 
@@ -89,6 +89,7 @@
                                 <ul id="mainmenu">
                                     <li><a class="active" href="#top">Home<span></span></a></li>
                                     <li><a href="#section-about">About me<span></span></a></li>
+                                    <li><a href="#section-skills">Skills<span></span></a></li>
                                     <li><a href="#section-services">What I Do<span></span></a></li>
                                     <li><a href="#section-fun-facts">My Experiences<span></span></a></li>
                                     <li><a href="#section-portfolio">Portfolio<span></span></a></li>
@@ -135,11 +136,11 @@
                                         <i class="fa fa-file-text-o"></i>Tools: <span></span>
                                     </div>
                                     <div class="d-field preview">
-                                        <i class="fa fa-external-link"></i>Preview: <span><a href="">Get to
+                                        <i class="fa fa-external-link"></i>Preview: <span><a target="_blank" href="">Get to
                                                 see</a></span>
                                     </div>
                                     <div class="d-field github">
-                                        <i class="fa fa-calendar-o"></i>Depot Github: <span><a href="">Get to
+                                        <i class="fa fa-calendar-o"></i>Depot Github: <span><a target="_blank" href="">Get to
                                                 see</a></span>
                                     </div>
                                 </div>
@@ -196,38 +197,34 @@
                             <h2>About Me</h2>
                             <div class="space-border"></div>
                         </div>
-                        <!-- <div class="col-md-8 offset-md-2 text-start wow fadeInUp">
-                            <p> I'm a graduate in Computer Engineering, and webmaster with almost 3 years of experience.
-                            </p>
-                            <p>My main skills are the creation of websites and web applications, either with the CMS
-                                Wordpress or using web development technologies requiring programming. I have a complete
-                                mastery of HTML5, CSS, PHP, Javascript and I am also very comfortable with the Laravel
-                                and Bootstrap frameworks.</p>
-                            <p>Having a website is not enough if it is not referenced. So I offer my services of web
-                                content writing for a quality natural referencing. I am attentive and I give a capital
-                                importance to the satisfaction of the customer. My pleasure is to have satisfied
-                                customers of my services, do not hesitate to contact me I answer in the hour.</p>
-                        </div> -->
 
                         <div class="col-lg-12 position-relative text-start wow fadeIn" data-wow-delay=".2s">
                             <p> I'm a graduate in Computer Engineering, and webmaster with almost 3 years of experience.
                                 My main skills are the creation of websites and web applications, either with the CMS
                                 Wordpress or using web development technologies requiring programming. I have a complete
                                 mastery of HTML5, CSS, PHP, Javascript and I am also very comfortable with the Laravel
-                                and Bootstrap frameworks. <br>
-                                Having a website is not enough if it is not referenced. So I offer my services of web
-                                content writing for a quality natural referencing. I am attentive and I give a capital
+                                and Bootstrap frameworks.
+                                <!-- Having a website is not enough if it is not referenced. So I offer my services of web
+                                content writing for a quality natural referencing. -->
+                                I am attentive and I give a capital
                                 importance to the satisfaction of the customer. My pleasure is to have satisfied
                                 customers of my services, do not hesitate to contact me I answer in the hour.
                             </p>
 
                         </div>
-                        <div class="spacer-single"></div>
+                    </div>
+                </div>
+            </section>
 
+            <section id="section-skills">
+                <div class="container relative">
+                    <div class="row">
                         <div class="col-md-12 text-center wow fadeInUp">
-                            <h2>Languages</h2>
+                            <h2>Skills</h2>
                             <div class="space-border"></div>
                         </div>
+
+                        <div class="spacer-single"></div>
 
                         <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".2s">
                             <div class="position-relative">
@@ -269,13 +266,7 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="spacer-single"></div>
-                        <div class="col-md-12 text-center wow fadeInUp">
-                            <h2>Frameworks et CMS</h2>
-                            <div class="space-border"></div>
-                        </div>
-
                         <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".2s">
                             <div class="position-relative">
                                 <div class="progressbar" data-animate="false">
@@ -316,6 +307,7 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -414,7 +406,7 @@
                 </div>
             </section>
 
-            <section id="section-portfolio" style="padding:35px 0 35px 0 !important;" class="no-bottom">
+            <section id="section-portfolio" class="no-bottom">
                 <div class="container relative">
                     <div class="row">
                         <div class="col-md-12 text-center wow fadeInUp">
@@ -613,7 +605,8 @@
                             <div class="post-content">
                                 <div class="post-image">
                                     <div class="" data-url="single-blog.html">
-                                        <img alt="" src="images/service3.png" data-path="images/coming-soon.jpg" data-type="5euros" class="lazy">
+                                        <img alt="" src="images/service3.png" data-path="images/coming-soon.jpg"
+                                            data-type="5euros" class="lazy">
                                     </div>
                                 </div>
                                 <div class="post-text">
@@ -626,7 +619,8 @@
                             <div class="post-content">
                                 <div class="post-image">
                                     <div class="" data-url="single-blog.html">
-                                        <img alt="" src="images/service4.png" data-path="images/coming-soon.jpg" data-type="5euros" class="lazy">
+                                        <img alt="" src="images/service4.png" data-path="images/coming-soon.jpg"
+                                            data-type="5euros" class="lazy">
                                     </div>
                                 </div>
                                 <div class="post-text">
@@ -640,7 +634,8 @@
                             <div class="post-content">
                                 <div class="post-image">
                                     <div class="" data-url="single-blog.html">
-                                        <img alt="" src="images/service1.png" data-path="images/coming-soon.jpg" data-type="5euros" class="lazy">
+                                        <img alt="" src="images/service1.png" data-path="images/coming-soon.jpg"
+                                            data-type="5euros" class="lazy">
                                     </div>
                                 </div>
                                 <div class="post-text">
@@ -654,7 +649,8 @@
                             <div class="post-content">
                                 <div class="post-image">
                                     <div class="" data-url="single-blog.html">
-                                        <img alt="" src="images/service5.png" data-path="images/coming-soon.jpg" data-type="5euros" class="lazy">
+                                        <img alt="" src="images/service5.png" data-path="images/coming-soon.jpg"
+                                            data-type="5euros" class="lazy">
                                     </div>
                                 </div>
                                 <div class="post-text">
@@ -667,7 +663,8 @@
                             <div class="post-content">
                                 <div class="post-image">
                                     <div class="" data-url="single-blog.html">
-                                        <img alt="" src="images/service2.png" data-path="images/coming-soon.jpg" data-type="5euros" class="lazy">
+                                        <img alt="" src="images/service2.png" data-path="images/coming-soon.jpg"
+                                            data-type="5euros" class="lazy">
                                     </div>
                                 </div>
                                 <div class="post-text">
