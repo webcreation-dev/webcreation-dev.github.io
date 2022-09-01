@@ -6814,7 +6814,9 @@ i.font60 {
 
 .social-icons {
     display: block;
-    float: right;
+    float: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .social-icons i {
