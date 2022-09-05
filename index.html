@@ -29,6 +29,9 @@
                 var description = $(this).closest('.item').find('p').text();
                 $('#addText').text(description);
 
+                var projectName = $(this).closest('.item').find('img').attr('data-name');
+                $('#addName').text(projectName);
+
                 var tech = $(this).closest('.item').find('img').attr('data-tech');
                 $('.de_project-details .tech span').text(tech);
 
@@ -125,7 +128,7 @@
                             </div>
 
                             <div class="col-lg-4 de_project-info">
-                                <h3>Description</h3>
+                                <h3 id="addName">Description</h3>
                                 <p id="addText"></p>
 
                                 <div class="de_project-details">
@@ -416,6 +419,7 @@
                     </div>
                     <div id="gallery" class="row sequence">
 
+                        <!-- 1 -->
                         <div class="col-md-4 item wow">
                             <div class="de_modal">
                                 <div class="card-image-1" data-tilt>
@@ -430,7 +434,8 @@
                                 </div>
                             </div>
                         </div>
-                        
+
+                        <!-- 2 -->
                         <div class="col-md-4 item wow">
                             <div class="de_modal">
                                 <div class="card-image-1" data-tilt>
@@ -445,7 +450,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+                        <!-- 3 -->
                         <div class="col-md-4 item wow">
                             <div class="de_modal">
                                 <div class="card-image-1" data-tilt>
@@ -461,6 +466,7 @@
                             </div>
                         </div>
                         
+                        <!-- 4 -->
                         <div class="col-md-4 item wow">
                             <div class="de_modal">
                                 <div class="card-image-1" data-tilt>
@@ -476,6 +482,7 @@
                             </div>
                         </div>
                         
+                        <!-- 5 -->
                         <div class="col-md-4 item wow">
                             <div class="de_modal">
                                 <div class="card-image-1" data-tilt>
@@ -491,37 +498,35 @@
                             </div>
                         </div>
 
+                        <!-- 6 -->
                         <div class="col-md-4 item wow">
                             <div class="de_modal">
                                 <div class="card-image-1" data-tilt>
                                     <div class="d-text">
-                                        <h3>IXIOXI</h3>
-                                        <h5 class="d-tag">Currently in production</h5>
+                                        <h3>E-COMMERCE SITE</h3>
                                     </div>
-                                    <img src="images/scan8.png" data-path="images/scan6.png" data-github=""
-                                        data-preview="" data-tech="Laravel" data-tools="HTML CSS PHP JAVASCRIPT"
-                                        class="img-fluid" alt="">
-                                    <p style="display: none;">It is about the project of a company in which it is
-                                        question of the implementation of a system OAuth 2.0 which will allow the
-                                        deployment of several SAAS applications on a main platform with the aim of
-                                        facilitating the connection to all the SAAS applications with only one account
-                                        which will be created on the main platform in order to avoid the creation of an
-                                        account on each application. In a second step, we have the implementation of the
-                                        database multi-tenancy system in each SAAS application to allow the separation
-                                        and the securing of the data of each company using the applications of the
-                                        platform.
-                                    </p>
+                                    <img src="images/scan2.png" data-name="PRINTBAR" data-path="images/1.png" data-github=""
+                                        data-preview="https://theprintbar97.com/" data-tech="Laravel"
+                                        data-tools="HTML CSS PHP JAVASCRIPT" class="img-fluid" alt="">
+                                    <p style="display: none;">Print Bar is an e-commerce site where you can buy
+                                        you can buy a premium quality license plate online.
+                                        quality. They are available for any means of transportation, fully
+                                        fully customizable. The site has an integrated configurator allowing to
+                                        plates from A to Z according to the tastes of the customer and with many
+                                        options.</p>
                                 </div>
                             </div>
                         </div>
                         
+                        
+                        <!-- 7 -->
                         <div class="col-md-4 item wow">
                             <div class="de_modal">
                                 <div class="card-image-1" data-tilt>
                                     <div class="d-text">
-                                        <h3>Rental Management</h3>
+                                        <h3>WEB APPLICATION</h3>
                                     </div>
-                                    <img src="images/scan7.png" data-preview="" data-path="images/6.jpg"
+                                    <img src="images/scan7.png" data-preview="" data-name="RENTAL MANAGEMENT" data-path="images/6.jpg"
                                         data-github="https://github.com/webcreation-dev/Rental-Management/tree/master"
                                         data-tech="Laravel" data-tools="HTML CSS PHP JAVASCRIPT" class="img-fluid"
                                         alt="">
@@ -541,33 +546,40 @@
                             </div>
                         </div>
                         
+                        <!-- 8 -->
                         <div class="col-md-4 item wow">
                             <div class="de_modal">
                                 <div class="card-image-1" data-tilt>
                                     <div class="d-text">
-                                        <h3>PRINT BAR</h3>
+                                        <h3>WEB APPLICATION</h3>
+                                        <h5 class="d-tag">Currently in production</h5>
                                     </div>
-                                    <img src="images/scan2.png" data-path="images/1.png" data-github=""
-                                        data-preview="https://theprintbar97.com/" data-tech="Laravel"
-                                        data-tools="HTML CSS PHP JAVASCRIPT" class="img-fluid" alt="">
-                                    <p style="display: none;">Print Bar is an e-commerce site where you can buy
-                                        you can buy a premium quality license plate online.
-                                        quality. They are available for any means of transportation, fully
-                                        fully customizable. The site has an integrated configurator allowing to
-                                        plates from A to Z according to the tastes of the customer and with many
-                                        options.</p>
+                                    <img src="images/scan8.png" data-path="images/scan6.png" data-github=""
+                                        data-preview="" data-tech="Laravel" data-name="IXIOXI" data-tools="HTML CSS PHP JAVASCRIPT"
+                                        class="img-fluid" alt="">
+                                    <p style="display: none;">It is about the project of a company in which it is
+                                        question of the implementation of a system OAuth 2.0 which will allow the
+                                        deployment of several SAAS applications on a main platform with the aim of
+                                        facilitating the connection to all the SAAS applications with only one account
+                                        which will be created on the main platform in order to avoid the creation of an
+                                        account on each application. In a second step, we have the implementation of the
+                                        database multi-tenancy system in each SAAS application to allow the separation
+                                        and the securing of the data of each company using the applications of the
+                                        platform.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         
+                        <!-- 9 -->
                         <div class="col-md-4 item wow">
                             <div class="de_modal">
                                 <div class="card-image-1" data-tilt>
                                     <div class="d-text">
-                                        <h3>Répétiteurs Du Net</h3>
+                                        <h3>MARKETPLACE</h3>
                                         <h5 class="d-tag">Currently in production</h5>
                                     </div>
-                                    <img src="images/scan3.png" data-path="images/4.png" data-github="" data-preview=""
+                                    <img src="images/scan3.png" data-path="images/4.png" data-name="REPETITEURS DU NET" data-github="" data-preview=""
                                         data-tech="WordPress" data-tools="PHP" class="img-fluid" alt="">
                                     <p style="display: none;">It is an online learning platform, where students can sign
                                         up to purchase courses and exercises in a specific subject, posted by an
@@ -578,13 +590,14 @@
                             </div>
                         </div>
                         
+                        <!-- 10 -->
                         <div class="col-md-4 item wow">
                             <div class="de_modal">
                                 <div class="card-image-1" data-tilt>
                                     <div class="d-text">
-                                        <h3>WAZEMI</h3>
+                                        <h3>WEB APPLICATION</h3>
                                     </div>
-                                    <img src="images/scan7.png" data-path="images/6.jpg" data-preview=""
+                                    <img src="images/scan7.png" data-path="images/6.jpg" data-name="WAZEMI" data-preview=""
                                         data-github="https://github.com/webcreation-dev/WAZEMI_PROJECT/tree/master"
                                         data-tech="Laravel" data-tools="HTML CSS PHP JAVASCRIPT" class="img-fluid"
                                         alt="">
@@ -601,13 +614,14 @@
                             </div>
                         </div>
                         
+                        <!-- 11 -->
                         <div class="col-md-4 item wow">
                             <div class="de_modal">
                                 <div class="card-image-1" data-tilt>
                                     <div class="d-text">
-                                        <h3>BNT Academy</h3>
+                                        <h3>WEB APPLICATION</h3>
                                     </div>
-                                    <img src="images/scan1.png" data-path="images/2.png" data-github=""
+                                    <img src="images/scan1.png" data-path="images/2.png" data-name="BNT ACADEMY" data-github=""
                                         data-preview="https://academy.bntgroup.net/" data-tech="Laravel"
                                         data-tools="HTML CSS PHP JAVASCRIPT" class="img-fluid" alt="">
                                     <p style="display: none;">Bnt Academy is a platform where are available
@@ -619,13 +633,14 @@
                             </div>
                         </div>
                         
+                        <!-- 12 -->
                         <div class="col-md-4 item wow">
                             <div class="de_modal">
                                 <div class="card-image-1" data-tilt>
                                     <div class="d-text">
-                                        <h3>Site Des Bons Plans</h3>
+                                        <h3>SITE VITRINE</h3>
                                     </div>
-                                    <img src="images/scan5.png" data-path="images/3.png" data-github=""
+                                    <img src="images/scan5.png" data-path="images/3.png" data-name="SITE DES BONS PLANS" data-github=""
                                         data-preview="http://s905731302.onlinehome.fr/" data-tech="WordPress"
                                         data-tools="HTML CSS PHP" class="img-fluid" alt="">
                                     <p style="display: none;">It is a website to which you can subscribe to stay
@@ -638,13 +653,14 @@
                             </div>
                         </div>
                         
+                        <!-- 13 -->
                         <div class="col-md-4 item wow">
                             <div class="de_modal">
                                 <div class="card-image-1" data-tilt>
                                     <div class="d-text">
-                                        <h3>Convert HTML To WordPress</h3>
+                                        <h3>WEB PROJECT</h3>
                                     </div>
-                                    <img src="images/scan7.png" data-path="images/6.jpg" data-preview=""
+                                    <img src="images/scan7.png" data-name="HTML TO WORPRESS" data-path="images/6.jpg" data-preview=""
                                         data-github="https://github.com/webcreation-dev/Convert-HTML-to-WordPress"
                                         data-tech="WordPress" data-tools="HTML CSS PHP" class="img-fluid" alt="">
                                     <p style="display: none;">This is a detailed project that explains the conversion of
@@ -654,13 +670,14 @@
                             </div>
                         </div>
                         
+                        <!-- 14 -->
                         <div class="col-md-4 item wow">
                             <div class="de_modal">
                                 <div class="card-image-1" data-tilt>
                                     <div class="d-text">
-                                        <h3>KALIZA</h3>
+                                        <h3>LANDING PAGE</h3>
                                     </div>
-                                    <img src="images/scan4.png" data-path="images/5.png" data-github=""
+                                    <img src="images/scan4.png" data-name="KALIZA" data-path="images/5.png" data-github=""
                                         data-preview="http://kaliza.io/en/" data-tech="WordPress"
                                         data-tools="HTML CSS JAVASCRIPT" class="img-fluid" alt="">
                                     <p style="display: none;">This is a landing page that presents the crypto currency
