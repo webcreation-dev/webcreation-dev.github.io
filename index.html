@@ -90,6 +90,22 @@
                     $(".de_project-info").css("display", "");
                 }
 
+                $('.filter').on('click', function() {
+                  var group = $(this).data('group');
+              
+                  if (group === 'category_all') {
+                    $('.item').show();
+                  } else {
+                    $('.item').hide();
+                    $('.item[data-groups*="' + group + '"]').show();
+                  }
+                  
+                  // Ajouter ou supprimer la classe "active" sur le filtre sélectionné
+                  $('.filter').removeClass('active');
+                  $(this).addClass('active');
+                });
+                
+
             });
         });
     </script>
