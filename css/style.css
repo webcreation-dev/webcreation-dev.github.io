@@ -11690,11 +11690,37 @@ list-style: none;
     display: none;
 }
 
+#profil-mobile {
+    display: none;
+}
+
+#profil-desktop{
+    display: block;
+}
+
 .v-center {
     min-height: 100%;
     min-height: 100vh;
     display: flex;
     align-items: center;
+}
+@media (max-width: 768px) {
+    .v-center {
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    #profil-desktop{
+        display: none;
+    }
+
+    .de-gradient-edge-bottom {
+        background: none;
+    }
+
+    #profil-mobile {
+        display: block;
+    }
 }
 
 
