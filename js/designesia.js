@@ -1923,6 +1923,7 @@
               var elementPos = $(this).offset().top;
               var topOfWindow = $(window).scrollTop();
               var percent = $(this).find('.circle').attr('data-percent');
+              var image = $(this).find('.circle').attr('data-image');
               var percentage = parseInt(percent, 10) / parseInt(100, 10);
               var animate = $(this).data('animate');
               if (elementPos < topOfWindow + $(window).height() - 30 && !animate) {
@@ -1939,7 +1940,9 @@
                   emptyFill: bg_circle_color
                 }).on('circle-animation-progress', function(event, progress, stepValue) {
                   $(this).find('div').text((stepValue * 100).toFixed(1) + "%");
+                  $(this).find('div').html('<img src="images/skills/' + image + '" width=50 height=50 alt="Description de l image"> <br> ' + (stepValue * 100).toFixed(1) + "%");
                 }).stop();
+
               }
             });
           }
