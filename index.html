@@ -112,8 +112,6 @@
 </head>
 
 <body class="onepage">
-
-    
     <div id="wrapper">
         <header class="transparent header-light">
             <div class="container">
@@ -202,6 +200,25 @@
             </div>
 
             <section aria-label="section" class="jarallax no-top no-bottom">
+
+                <!-- <style>
+                    .background-video {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        z-index: -1; /* Placez la vidéo en arrière-plan */
+                        opacity: 0.7; /* Ajustez l'opacité selon vos préférences */
+                    }
+                </style>
+                <video id="b6679694-5302-e78b-663c-0abca4e0e70b-video" class="background-video" autoplay="" loop="" style="background-image:url(&quot;https://uploads-ssl.webflow.com/61703fd2dacddfc4a97cf6ba/61cd0d5990261a4a93f1876c_Furniture2b-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+                    <source src="https://uploads-ssl.webflow.com/61703fd2dacddfc4a97cf6ba/61cd0d5990261a4a93f1876c_Furniture2b-transcode.mp4" data-wf-ignore="true">
+                    <source src="https://uploads-ssl.webflow.com/61703fd2dacddfc4a97cf6ba/61cd0d5990261a4a93f1876c_Furniture2b-transcode.webm" data-wf-ignore="true">
+                </video> -->
+
+
                 <img id="profil-desktop" src="images/test.png" class="jarallax-img" alt="">
                 <img id="profil-mobile" src="images/profil-mobile.png" alt="">
 
@@ -636,7 +653,9 @@
                                         <h3 class="d_timeline-title">2022 - 2023</h3>
                                         <p class="d_timeline-text"><span class="d_title">Teacher's Assistant</span><span class="d_company">HIGH SCHOOL “LE FAUCON” - Calavi | Benin</span>
                                             RESPONSABILITIES :  <br>
-                                                - Courses: "MVC Architecture & Frameworks" and "Multi-platform Development: Web Technologies" for 3rd year students in the "Information Systems and Software (IS&S)" program <br>
+                                                - <strong> Courses:</strong> "MVC Architecture & Frameworks" and "Multi-platform Development: Web Technologies" for 3rd year students in the "Information Systems and Software (IS&S)" program <br>
+                                                - <strong>Courses:</strong> "User authentication" for 2rd year students in the "Information Systems and Software (IS&S)" program <br>
+                                                - <strong>Courses:</strong> "Windows administration" for 1rd year students in the "Information Systems and Software (IS&S)" program <br>
                                                 - Assignments and quizzes to assess students' knowledge of course concepts <br>
                                         </p>
                                     </li>
@@ -644,7 +663,7 @@
                                         <h3 class="d_timeline-title">2022 - 2023</h3>
                                         <p class="d_timeline-text"><span class="d_title">Teacher's Assistant</span><span class="d_company">PREPARATORY CYCLE “MARIE-STELLA” - Cotonou | Benin</span>
                                             RESPONSABILITIES :  <br>
-                                                - Course: "Algorithms and the C language" for 2nd year students in the engineering preparatory cycle <br>
+                                                - <strong>Course:</strong> "Algorithms and the C language" for 2nd year students in the engineering preparatory cycle <br>
                                                 - TD session with students to apply the concepts learned in the course <br>
                                         </p>
                                     </li>
@@ -770,11 +789,13 @@
                         <div class=" col-xs-12 col-sm-12 ">
                           <div id="portfolio_content_q" class="portfolio-content">
                               
-                              <!-- <ul class="portfolio-filters wow fadeInLeft">
+                              <ul class="portfolio-filters wow fadeInLeft">
                                   <li class="active">
                                   <a class="filter btn btn-sm btn-link" data-group="category_all">All</a>
                                   </li>
-                                  
+                                  <li>
+                                        <a class="filter btn btn-sm btn-link" data-group="category_software">Software</a>
+                                    </li>
                                   <li>
                                   <a class="filter btn btn-sm btn-link" data-group="category_e-commerce">E-commerce Site</a>
                                   </li>
@@ -791,11 +812,11 @@
                                   <a class="filter btn btn-sm btn-link" data-group="category_showcase">Showcase Sites</a>
                                   </li>
 
-                                  <li>
+                                  <!-- <li>
                                   <a class="filter btn btn-sm btn-link" data-group="category_blog">Blog</a>
-                                  </li>
+                                  </li> -->
                                   
-                                  <li>
+                                  <!-- <li>
                                   <a class="filter btn btn-sm btn-link" data-group="category_landing_page">Landing Page</a>
                                   </li>
 
@@ -804,361 +825,353 @@
                                   </li>
                                   <li>
                                       <a class="filter btn btn-sm btn-link" data-group="category_web3">Web 3</a>
-                                  </li>
+                                  </li> -->
 
-                                  <li>
-                                      <a class="filter btn btn-sm btn-link" data-group="category_software">Software</a>
-                                  </li>
                                   
-                              </ul> -->
+                                  
+                              </ul>
             
-                            <div class="portfolio-grid three-columns shuffle wow fadeInRight" id="card-portfolio">
-      
-                              <figure id="terre_origine" class="item standard" data-groups='["category_all", "category_showcase"]'>
-                                <div class="portfolio-item-img">
-                                  <img src="images/terre_origine.png" alt="Full Project 2" title="" />
-                                  <a href="project/terre_origine.html" class="ajax-page-load"></a>
-                                </div>
-      
-                                <i class="far fa-file-alt"></i>
-                                <h4 class="name" style="color: white !important; background: blue !important;">TERRE ORIGINE</h4>
-                                <span class="category">Showcase</span>
-                              </figure>
+                              <div class="portfolio-grid three-columns shuffle wow fadeInRight" id="card-portfolio">
 
+                                <!-- New Projects -->
+            
+                                    <figure id="terre_origine" class="item standard" data-groups='["category_all", "category_software"]'>
+                                        <div class="portfolio-item-img">
+                                        <img src="images/sig_unstim.png" alt="Full Project 2" title="" />
+                                        <a href="project/sig_unstim.html" class="ajax-page-load"></a>
+                                        </div>
+                                        <i class="far fa-file-alt"></i>
+                                        <h4 class="name" style="color: white !important; background: blue !important;">SIG UNSTIM</h4>
+                                        <span class="category">Software</span>
+                                    </figure>
+            
+                                    <figure id="terre_origine" class="item standard" data-groups='["category_all", "category_software"]'>
+                                        <div class="portfolio-item-img">
+                                        <img src="images/sig_cpms.png" alt="Full Project 2" title="" />
+                                        <a href="project/sig_cpms.html" class="ajax-page-load"></a>
+                                        </div>
+                                        <i class="far fa-file-alt"></i>
+                                        <h4 class="name" style="color: white !important; background: blue !important;">SIG CPMS</h4>
+                                        <span class="category">Software</span>
+                                    </figure>
+                                    <figure id="cdel" class="item standard" data-groups='["category_all", "category_software"]'>
+                                        <div class="portfolio-item-img">
+                                          <img src="images/cdel.png" alt="Full Project 2" title="" />
+                                          <a href="project/cdel.html" class="ajax-page-load"></a>
+                                        </div>
+                                        <i class="far fa-file-alt"></i>
+                                        <h4 class="name" style="color: white !important; background: blue !important;"> SIG CDEL</h4>
+                                        <span class="category">Software</span>
+                                    </figure>
+                                    <figure id="erp_onab" class="item standard" data-groups='["category_all", "category_software"]'>
+                                        <div class="portfolio-item-img">
+                                          <img src="images/erp_onab.png" alt="Full Project 2" title="" />
+                                          <a href="project/erp_onab.html" class="ajax-page-load"></a>
+                                        </div>
+                                        <i class="far fa-file-alt"></i>
+                                        <h4 class="name" style="color: white !important; background: blue !important;">ERP ONAB BENIN</h4>
+                                        <span class="category">Software</span>
+                                    </figure>
+                                    <figure id="rh_poste" class="item standard" data-groups='["category_all", "category_software"]'>
+                                        <div class="portfolio-item-img">
+                                          <img src="images/rh_poste.png" alt="Full Project 2" title="" />
+                                          <a href="project/rh_poste.html" class="ajax-page-load"></a>
+                                        </div>
+                                        <i class="far fa-file-alt"></i>
+                                        <h4 class="name" style="color: white !important; background: blue !important;">ERP POSTE BENIN</h4>
+                                        <span class="category">Software</span>
+                                    </figure>
+            
+            
+                                    
+            
+                                    <figure id="terre_origine" class="item standard" data-groups='["category_all", "category_e-commerce"]'>
+                                        <div class="portfolio-item-img">
+                                        <img src="images/lynia_shop.png" alt="Full Project 2" title="" />
+                                        <a href="project/lynia_shop.html" class="ajax-page-load"></a>
+                                        </div>
+                                        <i class="far fa-file-alt"></i>
+                                        <h4 class="name" style="color: white !important; background: blue !important;">LYNIA SHOP</h4>
+                                        <span class="category">E-commerce</span>
+                                    </figure>
+            
+                                    <figure id="aziza" class="item standard" data-groups='["category_all", "category_e-commerce"]'>
+                                        <div class="portfolio-item-img">
+                                          <img src="images/aziza.png" alt="Full Project 2" title="" />
+                                          <a href="project/aziza.html" class="ajax-page-load"></a>
+                                        </div>
+                                        <i class="far fa-file-alt"></i>
+                                        <h4 class="name" style="color: white !important; background: blue !important;">AZIZA</h4>
+                                        <span class="category">E-commerce</span>
+                                    </figure>
+                                
+                                <!-- End New Projects -->
+            
                                 <figure id="mayday_phone" class="item standard" data-groups='["category_all", "category_e-commerce"]'>
-                                    <div class="portfolio-item-img">
+                                  <div class="portfolio-item-img">
                                     <img src="images/mayday_phone.png" alt="Full Project 2" title="" />
                                     <a href="project/mayday_phone.html" class="ajax-page-load"></a>
-                                    </div>
-        
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">MAYDAY PHONE</h4>
-                                    <span class="category">E-commerce</span>
+                                  </div>
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">MAYDAY PHONE</h4>
+                                  <span class="category">E-commerce</span>
                                 </figure>
-
                                 <figure id="benin_tourism" class="item standard" data-groups='["category_all", "category_marketplace"]'>
-                                    <div class="portfolio-item-img">
+                                  <div class="portfolio-item-img">
                                     <img src="images/benintourism.png" alt="Full Project 2" title="" />
                                     <a href="project/benin_tourism.html" class="ajax-page-load"></a>
-                                    </div>
-        
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">BENIN TOURISM</h4>
-                                    <span class="category">Marketplace</span>
+                                  </div>
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">BENIN TOURISM</h4>
+                                  <span class="category">Marketplace</span>
                                 </figure>
+            
                                 
-                                
-
-                                <figure id="cdel" class="item standard" data-groups='["category_all", "category_software"]'>
-                                    <div class="portfolio-item-img">
-                                    <img src="images/cdel.png" alt="Full Project 2" title="" />
-                                    <a href="project/cdel.html" class="ajax-page-load"></a>
-                                    </div>
-        
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">CDEL</h4>
-                                    <span class="category">Software</span>
-                                </figure>
-
-                                <figure id="erp_onab" class="item standard" data-groups='["category_all", "category_software"]'>
-                                    <div class="portfolio-item-img">
-                                    <img src="images/erp_onab.png" alt="Full Project 2" title="" />
-                                    <a href="project/erp_onab.html" class="ajax-page-load"></a>
-                                    </div>
-        
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">ERP ONAB BENIN</h4>
-                                    <span class="category">Software</span>
-                                </figure>
-
-                                <figure id="rh_poste" class="item standard" data-groups='["category_all", "category_software"]'>
-                                    <div class="portfolio-item-img">
-                                    <img src="images/rh_poste.png" alt="Full Project 2" title="" />
-                                    <a href="project/rh_poste.html" class="ajax-page-load"></a>
-                                    </div>
-        
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">RH POSTE BENIN</h4>
-                                    <span class="category">Software</span>
-                                </figure>
-
-                                <figure id="itec_solutions" class="item standard" data-groups='["category_all", "category_showcase"]'>
-                                    <div class="portfolio-item-img">
-                                    <img src="images/itec_solutions.png" alt="Full Project 2" title="" />
-                                    <a href="project/itec_solutions.html" class="ajax-page-load"></a>
-                                    </div>
-        
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">ITEC SOLUTIONS</h4>
-                                    <span class="category">Showcase</span>
-                                </figure>
-
                                 <figure id="ixioxi" class="item standard" data-groups='["category_all", "category_web_application"]'>
-                                    <div class="portfolio-item-img">
+                                  <div class="portfolio-item-img">
                                     <img src="images/scan8.png" alt="Full Project 2" title="" />
                                     <a href="project/ixioxi.html" class="ajax-page-load"></a>
-                                    </div>
-        
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">IXIOXI</h4>
-                                    <span class="category">Web Application</span>
+                                  </div>
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">IXIOXI</h4>
+                                  <span class="category">Web Application</span>
                                 </figure>
-
-                                <figure id="bnt" class="item standard" data-groups='["category_all", "category_web_application"]'>
+            
+                                <figure id="terre_origine" class="item standard" data-groups='["category_all", "category_web_application"]'>
                                     <div class="portfolio-item-img">
-                                    <img src="images/scan1.png" alt="Full Project 2" title="" />
-                                    <a href="project/bnt.html" class="ajax-page-load"></a>
+                                    <img src="images/lynia_delivery.png" alt="Full Project 2" title="" />
+                                    <a href="project/lynia_delivery_express.html" class="ajax-page-load"></a>
                                     </div>
-        
                                     <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">BNT ACADEMY</h4>
+                                    <h4 class="name" style="color: white !important; background: blue !important;">LYNIA DELIVERY EXPRESS</h4>
                                     <span class="category">Wep Application</span>
                                 </figure>
-
-                                <!-- <figure id="bonik" class="item standard" data-groups='["category_all", "category_e-commerce"]'>
+            
+                                <figure id="terre_origine" class="item standard" data-groups='["category_all", "category_showcase"]'>
                                     <div class="portfolio-item-img">
-                                    <img src="images/bonik.png" alt="Full Project 2" title="" />
-                                    <a href="project/bonik.html" class="ajax-page-load"></a>
+                                      <img src="images/terre_origine.png" alt="Full Project 2" title="" />
+                                      <a href="project/terre_origine.html" class="ajax-page-load"></a>
                                     </div>
-        
                                     <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">BONIK</h4>
-                                    <span class="category">E-commerce</span>
-                                </figure>
-
-                                <figure id="krypt" class="item standard" data-groups='["category_all", "category_web3"]'>
-                                    <div class="portfolio-item-img">
-                                    <img src="images/krypt.png" alt="Full Project 2" title="" />
-                                    <a href="project/krypt.html" class="ajax-page-load"></a>
-                                    </div>
-        
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">KRYPT</h4>
-                                    <span class="category">WEB3</span>
-                                </figure>
-
-                                <figure id="amnesty" class="item standard" data-groups='["category_all", "category_web_application"]'>
-                                    <div class="portfolio-item-img">
-                                    <img src="images/amnesty.png" alt="Full Project 2" title="" />
-                                    <a href="project/amnesty.html" class="ajax-page-load"></a>
-                                    </div>
-        
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">HUMAN's RIGHTS</h4>
-                                    <span class="category">Web Application</span>
-                                </figure>
-      
-                                <figure id="eatcoin" class="item standard" data-groups='["category_all", "category_web_application"]'>
-                                    <div class="portfolio-item-img">
-                                    <img src="images/eatcoin.png" alt="Full Project 2" title="" />
-                                    <a href="project/eatcoin.html" class="ajax-page-load"></a>
-                                    </div>
-        
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">EATCOIN</h4>
-                                    <span class="category">Web Application</span>
-                                </figure>
-
-                                <figure id="bossalini" class="item standard" data-groups='["category_all", "category_e-commerce"]'>
-                                    <div class="portfolio-item-img">
-                                    <img src="images/bossalini1.png" alt="Full Project 2" title="" />
-                                    <a href="project/bossalini.html" class="ajax-page-load"></a>
-                                    </div> 
-        
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">BOSSALINI</h4>
-                                    <span class="category">Web Application</span>
-                                </figure>
-      
-                                <figure id="karibe" class="item standard" data-groups='["category_all", "category_e-commerce"]'>
-                                    <div class="portfolio-item-img">
-                                    <img src="images/karibe.png" alt="Full Project 2" title="" />
-                                    <a href="project/karibe.html" class="ajax-page-load"></a>
-                                    </div>
-        
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">KARIBE</h4>
-                                    <span class="category">E-commerce</span>
-                                </figure>
-      
-                                <figure id="aziza" class="item standard" data-groups='["category_all", "category_e-commerce"]'>
-                                    <div class="portfolio-item-img">
-                                    <img src="images/aziza.png" alt="Full Project 2" title="" />
-                                    <a href="project/aziza.html" class="ajax-page-load"></a>
-                                    </div>
-        
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">AZIZA</h4>
-                                    <span class="category">E-commerce</span>
-                                </figure> 
-
-                                <figure id="printbar" class="item standard" data-groups='["category_all", "category_web_application"]'>
-                                    <div class="portfolio-item-img">
-                                    <img src="images/scan2.png" alt="Full Project 2" title="" />
-                                    <a href="project/printbar.html" class="ajax-page-load"></a>
-                                    </div>
-        
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">PRINTBAR</h4>
-                                    <span class="category">Web Application</span>
-                                </figure>
-        
-                                <figure id="mtavrx" class="item standard" data-groups='["category_all", "category_blog"]'>
-                                    <div class="portfolio-item-img">
-                                    <img src="images/mtavrx.png" alt="Full Project 2" title="" />
-                                    <a href="project/mtavrx.html" class="ajax-page-load"></a>
-                                    </div>
-        
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">MTAVRX</h4>
-                                    <span class="category">Blog</span>
-                                </figure>
-                        
-                                <figure id="bluesquare" class="item standard" data-groups='["category_all", "category_showcase"]'>
-                                    <div class="portfolio-item-img">
-                                    <img src="images/bluesquare.png" alt="Full Project 2" title="" />
-                                    <a href="project/bluesquare.html" class="ajax-page-load"></a>
-                                    </div>
-        
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">BLUESQUARE</h4>
+                                    <h4 class="name" style="color: white !important; background: blue !important;">TERRE ORIGINE</h4>
                                     <span class="category">Showcase</span>
                                 </figure>
                                 
+                                <!-- <figure id="itec_solutions" class="item standard" data-groups='["category_all", "category_showcase"]'>
+                                  <div class="portfolio-item-img">
+                                    <img src="images/itec_solutions.png" alt="Full Project 2" title="" />
+                                    <a href="project/itec_solutions.html" class="ajax-page-load"></a>
+                                  </div>
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">ITEC SOLUTIONS</h4>
+                                  <span class="category">Showcase</span>
+                                </figure>
+                                <figure id="bnt" class="item standard" data-groups='["category_all", "category_web_application"]'>
+                                  <div class="portfolio-item-img">
+                                    <img src="images/scan1.png" alt="Full Project 2" title="" />
+                                    <a href="project/bnt.html" class="ajax-page-load"></a>
+                                  </div>
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">BNT ACADEMY</h4>
+                                  <span class="category">Wep Application</span>
+                                </figure>
+                                <figure id="bonik" class="item standard" data-groups='["category_all", "category_e-commerce"]'>
+                                  <div class="portfolio-item-img">
+                                    <img src="images/bonik.png" alt="Full Project 2" title="" />
+                                    <a href="project/bonik.html" class="ajax-page-load"></a>
+                                  </div>
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">BONIK</h4>
+                                  <span class="category">E-commerce</span>
+                                </figure>
+                                <figure id="krypt" class="item standard" data-groups='["category_all", "category_web3"]'>
+                                  <div class="portfolio-item-img">
+                                    <img src="images/krypt.png" alt="Full Project 2" title="" />
+                                    <a href="project/krypt.html" class="ajax-page-load"></a>
+                                  </div>
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">KRYPT</h4>
+                                  <span class="category">WEB3</span>
+                                </figure>
+                                <figure id="amnesty" class="item standard" data-groups='["category_all", "category_web_application"]'>
+                                  <div class="portfolio-item-img">
+                                    <img src="images/amnesty.png" alt="Full Project 2" title="" />
+                                    <a href="project/amnesty.html" class="ajax-page-load"></a>
+                                  </div>
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">HUMAN's RIGHTS</h4>
+                                  <span class="category">Web Application</span>
+                                </figure>
+                                <figure id="eatcoin" class="item standard" data-groups='["category_all", "category_web_application"]'>
+                                  <div class="portfolio-item-img">
+                                    <img src="images/eatcoin.png" alt="Full Project 2" title="" />
+                                    <a href="project/eatcoin.html" class="ajax-page-load"></a>
+                                  </div>
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">EATCOIN</h4>
+                                  <span class="category">Web Application</span>
+                                </figure>
+                                <figure id="bossalini" class="item standard" data-groups='["category_all", "category_e-commerce"]'>
+                                  <div class="portfolio-item-img">
+                                    <img src="images/bossalini1.png" alt="Full Project 2" title="" />
+                                    <a href="project/bossalini.html" class="ajax-page-load"></a>
+                                  </div>
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">BOSSALINI</h4>
+                                  <span class="category">Web Application</span>
+                                </figure>
+                                <figure id="karibe" class="item standard" data-groups='["category_all", "category_e-commerce"]'>
+                                  <div class="portfolio-item-img">
+                                    <img src="images/karibe.png" alt="Full Project 2" title="" />
+                                    <a href="project/karibe.html" class="ajax-page-load"></a>
+                                  </div>
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">KARIBE</h4>
+                                  <span class="category">E-commerce</span>
+                                </figure>
+                                
+                                <figure id="printbar" class="item standard" data-groups='["category_all", "category_web_application"]'>
+                                  <div class="portfolio-item-img">
+                                    <img src="images/scan2.png" alt="Full Project 2" title="" />
+                                    <a href="project/printbar.html" class="ajax-page-load"></a>
+                                  </div>
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">PRINTBAR</h4>
+                                  <span class="category">Web Application</span>
+                                </figure>
+                                <figure id="mtavrx" class="item standard" data-groups='["category_all", "category_blog"]'>
+                                  <div class="portfolio-item-img">
+                                    <img src="images/mtavrx.png" alt="Full Project 2" title="" />
+                                    <a href="project/mtavrx.html" class="ajax-page-load"></a>
+                                  </div>
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">MTAVRX</h4>
+                                  <span class="category">Blog</span>
+                                </figure>
+                                <figure id="bluesquare" class="item standard" data-groups='["category_all", "category_showcase"]'>
+                                  <div class="portfolio-item-img">
+                                    <img src="images/bluesquare.png" alt="Full Project 2" title="" />
+                                    <a href="project/bluesquare.html" class="ajax-page-load"></a>
+                                  </div>
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">BLUESQUARE</h4>
+                                  <span class="category">Showcase</span>
+                                </figure>
                                 <figure id="gkel" class="item standard" data-groups='["category_all", "category_showcase"]'>
-                                    <div class="portfolio-item-img">
+                                  <div class="portfolio-item-img">
                                     <img src="images/gkel.png" alt="Full Project 2" title="" />
                                     <a href="project/gkel.html" class="ajax-page-load"></a>
-                                    </div>
-        
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">GKEL Consulting</h4>
-                                    <span class="category">Showcase</span>
+                                  </div>
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">GKEL Consulting</h4>
+                                  <span class="category">Showcase</span>
                                 </figure>
-        
                                 <figure id="rental" class="item standard" data-groups='["category_all", "category_web_application"]'>
-                                    <div class="portfolio-item-img">
+                                  <div class="portfolio-item-img">
                                     <img src="images/scan7.png" alt="Full Project 2" title="" />
                                     <a href="project/rental.html" class="ajax-page-load"></a>
-                                    </div>
-        
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">Rental Management</h4>
-                                    <span class="category">Web Application</span>
+                                  </div>
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">Rental Management</h4>
+                                  <span class="category">Web Application</span>
                                 </figure>
-
                                 <figure id="repetiteurs" class="item standard" data-groups='["category_all", "category_marketplace"]'>
-                                    <div class="portfolio-item-img">
+                                  <div class="portfolio-item-img">
                                     <img src="images/scan3.png" alt="Full Project 2" title="" />
                                     <a href="project/repetiteurs.html" class="ajax-page-load"></a>
-                                    </div>
-        
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">Répétiteurs du Net</h4>
-                                    <span class="category">Marketplace</span>
+                                  </div>
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">Répétiteurs du Net</h4>
+                                  <span class="category">Marketplace</span>
                                 </figure>
-      
                                 <figure id="wazemi" class="item standard" data-groups='["category_all", "category_web_application"]'>
-                                    <div class="portfolio-item-img">
+                                  <div class="portfolio-item-img">
                                     <img src="images/scan7.png" alt="Full Project 2" title="" />
                                     <a href="project/wazemi.html" class="ajax-page-load"></a>
-                                    </div>
-        
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">WAZEMI</h4>
-                                    <span class="category">Web Application</span>
+                                  </div>
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">WAZEMI</h4>
+                                  <span class="category">Web Application</span>
                                 </figure>
-
                                 <figure id="ong" class="item standard" data-groups='["category_all", "category_landing_page"]'>
-                                    <div class="portfolio-item-img">
+                                  <div class="portfolio-item-img">
                                     <img src="images/ong.png" alt="Full Project 2" title="" />
                                     <a href="project/ong.html" class="ajax-page-load"></a>
-                                    </div>
-        
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">SYSTEM IO</h4>
-                                    <span class="category">Landing Page</span>
+                                  </div>
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">SYSTEM IO</h4>
+                                  <span class="category">Landing Page</span>
                                 </figure>
-
                                 <figure id="libourne" class="item standard" data-groups='["category_all", "category_showcase"]'>
-                                    <div class="portfolio-item-img">
+                                  <div class="portfolio-item-img">
                                     <img src="images/scan5.png" alt="Full Project 2" title="" />
                                     <a href="project/libourne.html" class="ajax-page-load"></a>
-                                    </div>
-        
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">SITES DES BONS PLANS</h4>
-                                    <span class="category">Showcase</span>
+                                  </div>
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">SITES DES BONS PLANS</h4>
+                                  <span class="category">Showcase</span>
                                 </figure>
-
                                 <figure id="kaliza" class="item standard" data-groups='["category_all", "category_landing_page"]'>
-                                    <div class="portfolio-item-img">
+                                  <div class="portfolio-item-img">
                                     <img src="images/scan4.png" alt="Full Project 2" title="" />
                                     <a href="project/kaliza.html" class="ajax-page-load"></a>
-                                    </div>
-        
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">KALIZA</h4>
-                                    <span class="category">Landing Page</span>
+                                  </div>
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">KALIZA</h4>
+                                  <span class="category">Landing Page</span>
                                 </figure>
-
-                                <figure id="html_wordpress" class="item standard" data-groups='["category_all", "category_web_project"]'>
-                                    <div class="portfolio-item-img">
-                                        <img src="images/scan7.png" alt="Full Project 2" title="" />
-                                        <a href="project/html_wordpress.html" class="ajax-page-load"></a>
-                                    </div>
             
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">HTML TO WORDPRESS</h4>
-                                    <span class="category">Web Porject</span>
+                                <figure id="html_wordpress" class="item standard" data-groups='["category_all", "category_web_project"]'>
+                                  <div class="portfolio-item-img">
+                                    <img src="images/scan7.png" alt="Full Project 2" title="" />
+                                    <a href="project/html_wordpress.html" class="ajax-page-load"></a>
+                                  </div>
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">HTML TO WORDPRESS</h4>
+                                  <span class="category">Web Porject</span>
                                 </figure>
-
+            
                                 <figure id="hydro" class="item standard" data-groups='["category_all", "category_landing_page"]'>
-                                    <div class="portfolio-item-img">
+                                  <div class="portfolio-item-img">
                                     <img src="images/hydro.png" alt="Full Project 2" title="" />
                                     <a href="project/hydro.html" class="ajax-page-load"></a>
-                                    </div>
-        
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">HCORI</h4>
-                                    <span class="category">Landing Page</span>
+                                  </div>
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">HCORI</h4>
+                                  <span class="category">Landing Page</span>
                                 </figure>
-
-
+            
                                 <figure id="eden" class="item standard" data-groups='["category_all", "category_portfolio"]'>
-                                    <div class="portfolio-item-img">
-                                        <img src="images/eden-1.png" alt="Full Project 2" title="" />
-                                        <a href="project/eden.html" class="ajax-page-load"></a>
-                                    </div>
-            
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">EDEN</h4>
-                                    <span class="category">Portfolio</span>
+                                  <div class="portfolio-item-img">
+                                    <img src="images/eden-1.png" alt="Full Project 2" title="" />
+                                    <a href="project/eden.html" class="ajax-page-load"></a>
+                                  </div>
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">EDEN</h4>
+                                  <span class="category">Portfolio</span>
                                 </figure>
-
+            
                                 <figure id="julien" class="item standard" data-groups='["category_all", "category_portfolio"]'>
-                                    <div class="portfolio-item-img">
-                                        <img src="images/julien-1.png" alt="Full Project 2" title="" />
-                                        <a href="project/julien.html" class="ajax-page-load"></a>
-                                    </div>
-            
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">JULIEN</h4>
-                                    <span class="category">Portfolio</span>
+                                  <div class="portfolio-item-img">
+                                    <img src="images/julien-1.png" alt="Full Project 2" title="" />
+                                    <a href="project/julien.html" class="ajax-page-load"></a>
+                                  </div>
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">JULIEN</h4>
+                                  <span class="category">Portfolio</span>
                                 </figure>
-
-                                <figure id="smartcontact" class="item standard" data-groups='["category_all", "category_web_application"]'>
-                                    <div class="portfolio-item-img">
-                                        <img src="images/smart_contact-1.png" alt="Full Project 2" title="" />
-                                        <a href="project/smart_contact.html" class="ajax-page-load"></a>
-                                    </div>
             
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">SMART CONTACT</h4>
-                                    <span class="category">Web Application</span>
+                                <figure id="smartcontact" class="item standard" data-groups='["category_all", "category_web_application"]'>
+                                  <div class="portfolio-item-img">
+                                    <img src="images/smart_contact-1.png" alt="Full Project 2" title="" />
+                                    <a href="project/smart_contact.html" class="ajax-page-load"></a>
+                                  </div>
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">SMART CONTACT</h4>
+                                  <span class="category">Web Application</span>
                                 </figure> -->
-                            
-                            </div>
+            
+                              </div>
 
 
                             <!-- <div style="text-align: center;">
