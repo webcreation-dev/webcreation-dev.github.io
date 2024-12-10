@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
-    
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CZB632MQ5K"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-CZB632MQ5K');
-</script>
-    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CZB632MQ5K"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-CZB632MQ5K');
+    </script>
+
     <title>WEBCREATION | We will manage your IT projects </title>
     <link rel="icon" href="images/W.png" type="image/gif" sizes="16x16">
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
@@ -90,21 +90,21 @@
                     $(".de_project-info").css("display", "");
                 }
 
-                $('.filter').on('click', function() {
-                  var group = $(this).data('group');
-              
-                  if (group === 'category_all') {
-                    $('.item').show();
-                  } else {
-                    $('.item').hide();
-                    $('.item[data-groups*="' + group + '"]').show();
-                  }
-                  
-                  // Ajouter ou supprimer la classe "active" sur le filtre sélectionné
-                  $('.filter').removeClass('active');
-                  $(this).addClass('active');
+                $('.filter').on('click', function () {
+                    var group = $(this).data('group');
+
+                    if (group === 'category_all') {
+                        $('.item').show();
+                    } else {
+                        $('.item').hide();
+                        $('.item[data-groups*="' + group + '"]').show();
+                    }
+
+                    // Ajouter ou supprimer la classe "active" sur le filtre sélectionné
+                    $('.filter').removeClass('active');
+                    $(this).addClass('active');
                 });
-                
+
 
             });
         });
@@ -180,11 +180,13 @@
                                         <i class="fa fa-file-text-o"></i>Tools: <span></span>
                                     </div>
                                     <div class="d-field preview">
-                                        <i class="fa fa-external-link"></i>Preview: <span><a target="_blank" href="">Get to
+                                        <i class="fa fa-external-link"></i>Preview: <span><a target="_blank" href="">Get
+                                                to
                                                 see</a></span>
                                     </div>
                                     <div class="d-field github">
-                                        <i class="fa fa-calendar-o"></i>Depot Github: <span><a target="_blank" href="">Get to
+                                        <i class="fa fa-calendar-o"></i>Depot Github: <span><a target="_blank"
+                                                href="">Get to
                                                 see</a></span>
                                     </div>
                                 </div>
@@ -221,6 +223,10 @@
 
                 <img id="profil-desktop" src="images/test.png" class="jarallax-img" alt="">
                 <img id="profil-mobile" src="images/profil-mobile.png" alt="">
+                <!-- <img id="profil-desktop" src="images/profil_test.png" class="jarallax-img" alt="">
+
+                <img id="profil-mobile" src="images/banner_profil.png" alt=""> -->
+
 
                 <div class="v-center">
                     <div class="container mt-5">
@@ -231,15 +237,16 @@
                                 <div class="h1 wow fadeInUp" data-wow-delay=".6s">
                                     Hi, I'm <span class="id-color-2">Julian ADJIBI</span> <br class="sm-hide">a
                                     <div class="typed-strings">
-                                        <p>sotware Engineer.</p>
-                                        <p>Backend Developer.</p>
-                                        <p>WordPress Developer</p>
+                                        <p>Sotware Engineer</p>
+                                        <p>Backend Developer</p>
+                                        <p>Lover scalable architecture</p>
                                     </div>
                                     <div class="typed"></div>
                                 </div>
 
                                 <div class="spacer-10"></div>
-                                <a href="./CURRICULUM_VITAE_JULIAN_ADJIBI.pdf" target="_blank" download class="btn-main wow fadeInUp">Download CV</a>
+                                <a href="./CV_JULIAN_ADJIBI.pdf" target="_blank" download
+                                    class="btn-main wow fadeInUp">Download CV</a>
                                 <a class="btn-main wow fadeInUp" data-wow-delay=".6s" href="#section-services">What I
                                     Do</a>
                             </div>
@@ -263,14 +270,15 @@
                         </div>
 
                         <div class="col-lg-12 position-relative text-start wow fadeIn" data-wow-delay=".2s">
-                            <p class="justify-text"> I'm a graduate in Computer Engineering, and webmaster with almost 3 years of experience.
-                                My main skills are the creation of websites and web applications, either with the CMS
-                                Wordpress or using web development technologies requiring programming. I have a complete
-                                mastery of HTML5, CSS, PHP, Javascript and I am also very comfortable with the Laravel
-                                and Bootstrap frameworks.
-                                I am attentive and I give a capital
-                                importance to the satisfaction of the customer. My pleasure is to have satisfied
-                                customers of my services, do not hesitate to contact me I answer in the hour.
+                            <p class="justify-text"> Motivated Full Stack Software Engineer with over 4 years of
+                                experience specializing in backend development and CI/CD automation on cloud platforms
+                                such as AWS, Azure, and GCP. I have successfully delivered 20+ projects, combining
+                                technical expertise, clean and maintainable code, and strong team collaboration. My
+                                experience includes designing scalable solutions, implementing Microservices
+                                Infrastructure, and creating automated pipelines to streamline development and
+                                deployment processes. Proficient in Node.js, Express.js, Nest.js, Laravel, SQL, NoSQL,
+                                and cloud-based CI/CD tools, I am passionate about building efficient systems that drive
+                                productivity and align with business goals.
                             </p>
 
                         </div>
@@ -289,7 +297,7 @@
                         <div class="spacer-single"></div>
                         <h3 class="s_border">Languages</h3>
 
-                        <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".2s">
+                        <!-- <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".2s">
                             <div class="position-relative">
                                 <div class="progressbar" data-animate="false">
                                     <div class="circle" data-percent="99" data-image="html5.svg">
@@ -298,17 +306,8 @@
                                     <h4>HTML5</h4>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".2s">
-                            <div class="position-relative">
-                                <div class="progressbar" data-animate="false">
-                                    <div class="circle" data-percent="99" data-image="css3.png">
-                                        <div></div>
-                                    </div>
-                                    <h4>CSS3</h4>
-                                </div>
-                            </div>
-                        </div>
+                        </div> -->
+
                         <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".2s">
                             <div class="position-relative">
                                 <div class="progressbar" data-animate="false">
@@ -316,6 +315,16 @@
                                         <div></div>
                                     </div>
                                     <h4>JAVASCRIPT</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".2s">
+                            <div class="position-relative">
+                                <div class="progressbar" data-animate="false">
+                                    <div class="circle" data-percent="99" data-image="typescript.svg">
+                                        <div></div>
+                                    </div>
+                                    <h4>TYPESCRIPT</h4>
                                 </div>
                             </div>
                         </div>
@@ -362,6 +371,37 @@
 
                         <div class="spacer-single"></div>
                         <h3 class="s_border">Frameworks & Tools</h3>
+
+                        <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".8s">
+                            <div class="position-relative">
+                                <div class="progressbar" data-animate="false">
+                                    <div class="circle" data-percent="85" data-image="node.svg">
+                                        <div></div>
+                                    </div>
+                                    <h4>NODE JS</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".8s">
+                            <div class="position-relative">
+                                <div class="progressbar" data-animate="false">
+                                    <div class="circle" data-percent="85" data-image="expressjs.svg">
+                                        <div></div>
+                                    </div>
+                                    <h4>EXPRESS JS</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".4s">
+                            <div class="position-relative">
+                                <div class="progressbar" data-animate="false">
+                                    <div class="circle" data-percent="93" data-image="nestjs.svg">
+                                        <div></div>
+                                    </div>
+                                    <h4>NEST JS</h4>
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".2s">
                             <div class="position-relative">
                                 <div class="progressbar" data-animate="false">
@@ -372,13 +412,85 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".8s">
+                            <div class="position-relative">
+                                <div class="progressbar" data-animate="false">
+                                    <div class="circle" data-percent="95" data-image="mysql.svg">
+                                        <div></div>
+                                    </div>
+                                    <h4>MySQL</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".8s">
+                            <div class="position-relative">
+                                <div class="progressbar" data-animate="false">
+                                    <div class="circle" data-percent="80" data-image="postgresql.svg">
+                                        <div></div>
+                                    </div>
+                                    <h4>PostgreSQL</h4>
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".4s">
                             <div class="position-relative">
                                 <div class="progressbar" data-animate="false">
-                                    <div class="circle" data-percent="93" data-image="react_js.png">
+                                    <div class="circle" data-percent="97" data-image="mongodb.png">
                                         <div></div>
                                     </div>
-                                    <h4>REACT JS</h4>
+                                    <h4>MONGO DB</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".4s">
+                            <div class="position-relative">
+                                <div class="progressbar" data-animate="false">
+                                    <div class="circle" data-percent="97" data-image="graphql.svg">
+                                        <div></div>
+                                    </div>
+                                    <h4>GRAPH QL</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".8s">
+                            <div class="position-relative">
+                                <div class="progressbar" data-animate="false">
+                                    <div class="circle" data-percent="80" data-image="docker.svg">
+                                        <div></div>
+                                    </div>
+                                    <h4>DOCKER</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".8s">
+                            <div class="position-relative">
+                                <div class="progressbar" data-animate="false">
+                                    <div class="circle" data-percent="80" data-image="kubernetes.svg">
+                                        <div></div>
+                                    </div>
+                                    <h4>KUBERNETES</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".4s">
+                            <div class="position-relative">
+                                <div class="progressbar" data-animate="false">
+                                    <div class="circle" data-percent="97" data-image="github.svg">
+                                        <div></div>
+                                    </div>
+                                    <h4>GITHUB</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".4s">
+                            <div class="position-relative">
+                                <div class="progressbar" data-animate="false">
+                                    <div class="circle" data-percent="97" data-image="travisci.svg">
+                                        <div></div>
+                                    </div>
+                                    <h4>TRAVIS CI</h4>
                                 </div>
                             </div>
                         </div>
@@ -392,7 +504,7 @@
                                 </div>
                             </div>
                         </div> -->
-                        
+
                         <!-- <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".8s">
                             <div class="position-relative">
                                 <div class="progressbar" data-animate="false">
@@ -433,46 +545,7 @@
                                 </div>
                             </div>
                         </div> -->
-                        <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".8s">
-                            <div class="position-relative">
-                                <div class="progressbar" data-animate="false">
-                                    <div class="circle" data-percent="85" data-image="node.svg">
-                                        <div></div>
-                                    </div>
-                                    <h4>Node JS</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".8s">
-                            <div class="position-relative">
-                                <div class="progressbar" data-animate="false">
-                                    <div class="circle" data-percent="95" data-image="mysql.svg">
-                                        <div></div>
-                                    </div>
-                                    <h4>MySQL</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".8s">
-                            <div class="position-relative">
-                                <div class="progressbar" data-animate="false">
-                                    <div class="circle" data-percent="80" data-image="postgresql.svg">
-                                        <div></div>
-                                    </div>
-                                    <h4>PostgreSQL</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".4s">
-                            <div class="position-relative">
-                                <div class="progressbar" data-animate="false">
-                                    <div class="circle" data-percent="97" data-image="github.svg">
-                                        <div></div>
-                                    </div>
-                                    <h4>GITHUB</h4>
-                                </div>
-                            </div>
-                        </div>
+
                         <!-- <div class="col-lg-3 position-relative wow fadeIn" data-wow-delay=".8s">
                             <div class="position-relative">
                                 <div class="progressbar" data-animate="false">
@@ -597,10 +670,11 @@
                                 <div class="de_3d-box">
                                     <div class="d-inner">
                                         <i class="icon_genius id-color-2"></i>
-                                        <div class="text">
+                                        <div class="text" style="text-align: justify;">
                                             <h3>Web Application</h3>
-                                            I will create your complete web application coupled with your
-                                            and adapted to all screen formats (responsive) with Laravel
+                                            I design and develop modern, scalable, and responsive web applications
+                                            tailored to meet user needs and business goals, combining clean code with
+                                            seamless user experiences.
                                         </div>
                                     </div>
                                 </div>
@@ -609,10 +683,10 @@
                                 <div class="de_3d-box">
                                     <div class="d-inner">
                                         <i class="icon_tools id-color-2"></i>
-                                        <div class="text">
-                                            <h3>WordPress Site</h3>
-                                            I will build your website with WordPress. Whether it's an e-commerce site,
-                                            storefront, magazine or blog, or your landing page
+                                        <div class="text" style="text-align: justify;">
+                                            <h3>Integrated Management System</h3>
+                                            I build integrated management systems that centralize and optimize business
+                                            operations, enabling better decision-making and improved productivity.
                                         </div>
                                     </div>
                                 </div>
@@ -621,11 +695,11 @@
                                 <div class="de_3d-box">
                                     <div class="d-inner">
                                         <i class="icon_camera_alt id-color-2"></i>
-                                        <div class="text">
-                                            <h3>Customized features</h3>
-                                            I will add custom features to your
-                                            WordPress site, or to your web application
-                                            or do a complete redesign of your website.
+                                        <div class="text" style="text-align: justify;">
+                                            <h3>Microservices Application</h3>
+                                            I develop robust microservices applications with scalable architectures,
+                                            ensuring flexibility, performance, and easy integration with modern
+                                            technologies.
                                         </div>
                                     </div>
                                 </div>
@@ -648,54 +722,61 @@
                             <div class="p-4">
                                 <h3 class="s_border">Experiences</h3>
                                 <ul class="d_timeline">
+                                    
                                     <li class="d_timeline-item">
-                                        <h3 class="d_timeline-title">2023 - 2024</h3>
-                                        <p class="d_timeline-text"><span class="d_title">Teacher's Assistant</span><span class="d_company">HIGH SCHOOL “LE FAUCON” - Calavi | Benin</span>
-                                            RESPONSABILITIES :  <br>
-                                                - <strong> Courses:</strong> "MVC Architecture & Frameworks" and "Multi-platform Development: Web Technologies" for 3rd year students in the "Information Systems and Software (IS&S)" program <br>
-                                                - <strong>Courses:</strong> "User authentication" for 2rd year students in the "Information Systems and Software (IS&S)" program <br>
-                                                - <strong>Courses:</strong> "Windows administration" for 1rd year students in the "Information Systems and Software (IS&S)" program <br>
-                                                - Assignments and quizzes to assess students' knowledge of course concepts <br>
+                                        <h3 class="d_timeline-title">March 2024 - October 2024</h3>
+                                        <p class="d_timeline-text"><span class="d_title">Team Leader & Backend
+                                                Developer</span><span class="d_company">AFRIKSKILLS</span>
+                                            RESPONSABILITIES : <br>
+                                            - Management of a team of four developers <br>
+                                            - Development of legal management software for banks and companies, used in
+                                            three banks in Africa and five companies. <br>
                                         </p>
                                     </li>
                                     <li class="d_timeline-item">
-                                        <h3 class="d_timeline-title">2023 - 2024</h3>
-                                        <p class="d_timeline-text"><span class="d_title">Teacher's Assistant</span><span class="d_company">PREPARATORY CYCLE “MARIE-STELLA” - Cotonou | Benin</span>
-                                            RESPONSABILITIES :  <br>
-                                                - <strong>Course:</strong> "Algorithms and the C language" for 2nd year students in the engineering preparatory cycle <br>
-                                                - TD session with students to apply the concepts learned in the course <br>
-                                        </p>
-                                    </li>
-                                    <!-- ■ -->
-                                    <li class="d_timeline-item">
-                                        <h3 class="d_timeline-title">2022 - 2024</h3>
-                                        <p class="d_timeline-text"><span class="d_title">Laravel Developer</span><span class="d_company">COSIT BENIN</span>
-                                            RESPONSABILITIES :  <br>
-                                                - Working on an ERP for the management of the activities of the Office National du Bois (ONAB) of Benin <br>
-                                                - To work on an ERP of management of the activities of the POST of Benin <br>
-                                                - To work on an SIM AH, sotware for farmers with the FUPRO Benin <br>
+                                        <h3 class="d_timeline-title">September 2022- June 2024
+                                        </h3>
+                                        <p class="d_timeline-text"><span class="d_title">Team Leader & Full Stack
+                                                Developer</span><span class="d_company">COSIT BENIN</span>
+                                            RESPONSABILITIES : <br>
+                                            - Managed a team of five developers to deliver six government projects,
+                                            including ERP platforms for ONAB, UNSTIM, and Benin Post to optimize their
+                                            operations. <br>
                                         </p>
                                     </li>
                                     <li class="d_timeline-item">
-                                        <h3 class="d_timeline-title">2021 - 2023</h3>
-                                        <p class="d_timeline-text"><span class="d_title">WordPress & Laravel Developer</span><span class="d_company">HORIZONS PLUS</span>
-                                            RESPONSABILITIES :  <br>
-                                                - WordPress website and Laravel application design <br>
+                                        <h3 class="d_timeline-title">January 2024 - June 2024</h3>
+                                        <p class="d_timeline-text"><span class="d_title">Mentoring Support
+                                            </span><span class="d_company">HIGH SCHOOL “LE FAUCON”</span>
+                                            RESPONSABILITIES : <br>
+                                            - Supervision of 4 students in the Licence Système Informatique et Logiciel
+                                            program for the development of their dissertation project and preparation of
+                                            the defense. <br>
                                         </p>
                                     </li>
                                     <li class="d_timeline-item">
-                                        <h3 class="d_timeline-title">2020 - 2022</h3>
-                                        <p class="d_timeline-text"><span class="d_title">WordPress & Laravel Developer</span><span class="d_company">BNT GROUP</span>
-                                            RESPONSABILITIES :  <br>
-                                            - Work on a centralized application to manage the Single Sign On of all the company's applications <br>
-                                            - Creation of small event management applications <br>
-                                            - Writing of functional and technical specifications <br>
-                                            - Collection and analysis of customer needs <br>
-                                            - Study and detailed design of IT solutions <br>
-                                            - Implementation and Deployment of IT solutions <br>
-                                            - To work on an ERP of management of the activities<br>
+                                        <h3 class="d_timeline-title">October 2023 - November 2023</h3>
+                                        <p class="d_timeline-text"><span class="d_title">Teacher's Assistant</span>
+                                            <br>
+                                            <span class="d_company">HIGH SCHOOL “LE FAUCON” - Calavi | Benin</span>
+                                            RESPONSABILITIES : <br>
+                                            I teach courses in the "Information Systems and Software (IS&S)" program,
+                                            covering topics such as MVC Architecture, Multi-platform Development, User
+                                            Authentication, and Windows Administration across 1st to 3rd-year levels. I
+                                            also create assignments and quizzes to evaluate students' understanding of
+                                            the material.
+                                            <br>
+                                        </p>
+                                        <p class="d_timeline-text">
+                                            <span class="d_company">PREPARATORY CYCLE “MARIE-STELLA” - Cotonou |
+                                                Benin</span>
+                                            RESPONSABILITIES : <br>
+                                            I teach "Algorithms and the C Language" to 2nd-year engineering preparatory
+                                            students, combining lectures with practical sessions to apply key concepts.
+                                            <br>
                                         </p>
                                     </li>
+                                    
                                 </ul>
                             </div>
                         </div>
@@ -705,31 +786,44 @@
                                 <ul class="d_timeline">
                                     <li class="d_timeline-item">
                                         <h3 class="d_timeline-title">20020 - 2023</h3>
-                                        <p class="d_timeline-text"><span class="d_title">Engineer</span><span class="d_company">ENSGMM (UNSTIM)</span>
-                                            This is a BAC+5 level course that allows students to specialize in the use of mathematics and modeling to solve complex problems in engineering fields. Students learn to use mathematical tools to model physical systems and to use simulation software to solve concrete problems. 
+                                        <p class="d_timeline-text"><span class="d_title">Engineer</span><span
+                                                class="d_company">ENSGMM (UNSTIM)</span>
+                                            This is a BAC+5 level course that allows students to specialize in the use
+                                            of mathematics and modeling to solve complex problems in engineering fields.
+                                            Students learn to use mathematical tools to model physical systems and to
+                                            use simulation software to solve concrete problems.
                                         </p>
                                     </li>
                                     <li class="d_timeline-item">
                                         <h3 class="d_timeline-title">2018 - 2020</h3>
-                                        <p class="d_timeline-text"><span class="d_title">Certificate of completion of the preparatory cycle</span><span class="d_company">INSPEI (UNSTIM)</span>
-                                            It is a BAC+2 level training that prepares students for engineering studies by providing them with the basic knowledge in mathematics, physics and computer science. It is essential for those who wish to pursue engineering studies and acquire the necessary skills to succeed in this demanding field.
+                                        <p class="d_timeline-text"><span class="d_title">Certificate of completion of
+                                                the preparatory cycle</span><span class="d_company">INSPEI
+                                                (UNSTIM)</span>
+                                            It is a BAC+2 level training that prepares students for engineering studies
+                                            by providing them with the basic knowledge in mathematics, physics and
+                                            computer science. It is essential for those who wish to pursue engineering
+                                            studies and acquire the necessary skills to succeed in this demanding field.
                                         </p>
                                     </li>
-                                    <li class="d_timeline-item">
+                                    <!-- <li class="d_timeline-item">
                                         <h3 class="d_timeline-title">2015 - 2018</h3>
-                                        <p class="d_timeline-text"><span class="d_title">BAC D</span><span class="d_company">CSP "La Cité"</span>
-                                            It is a degree that allows students to acquire professional and technical skills in a specific field. It also provides opportunities to pursue higher education by allowing students to specialize in a particular field.
+                                        <p class="d_timeline-text"><span class="d_title">BAC D</span><span
+                                                class="d_company">CSP "La Cité"</span>
+                                            It is a degree that allows students to acquire professional and technical
+                                            skills in a specific field. It also provides opportunities to pursue higher
+                                            education by allowing students to specialize in a particular field.
                                         </p>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div style="text-align: center;">
-                        <a href="./CURRICULUM_VITAE_JULIAN_ADJIBI.pdf" target="_blank" download class="btn-main wow fadeInUp">DOWNLOAD MY CV</a>
+                        <a href="./CV_JULIAN_ADJIBI.pdf" target="_blank" download class="btn-main wow fadeInUp">DOWNLOAD
+                            MY CV</a>
                     </div>
                 </div>
-                
+
             </section>
 
             <section id="section-fun-facts" aria-label="section" class="jarallax no-bottom">
@@ -737,7 +831,15 @@
                 <img src="records2.jpg" class="jarallax-img" alt="">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12 text-center wow fadeInUp">My skills include the ability to work in a team, to understand and analyze customer needs and to implement the right digital solutions. My skills include the ability to work in a team, to understand and analyze customer needs and to implement the right digital solutions. My skills include the ability to work in a team, to understand and analyze customer needs and to implement the right digital solutions. My skills include the ability to work in a team, to understand and analyze customer needs and to implement the right digital solutions. My skills include the ability to work in a team, to understand and analyze customer needs and to implement the right digital solutions. 
+                        <div class="col-md-12 text-center wow fadeInUp">
+                            <!-- My skills include the ability to work in a team,
+                            to understand and analyze customer needs and to implement the right digital solutions. My
+                            skills include the ability to work in a team, to understand and analyze customer needs and
+                            to implement the right digital solutions. My skills include the ability to work in a team,
+                            to understand and analyze customer needs and to implement the right digital solutions. My
+                            skills include the ability to work in a team, to understand and analyze customer needs and
+                            to implement the right digital solutions. My skills include the ability to work in a team,
+                            to understand and analyze customer needs and to implement the right digital solutions. -->
                             <h2>My Experiences</h2>
                             <div class="space-border"></div>
                         </div>
@@ -746,28 +848,28 @@
                     <div class="row">
                         <div class="col-md-3 wow fadeIn" data-wow-delay="0">
                             <div class="de_count text-center">
-                                <h3 class="timer" data-to="10" data-speed="2500">0</h3>
+                                <h3 class="timer" data-to="15" data-speed="2500">0</h3>
                                 <span>SKILLS</span>
                             </div>
                         </div>
 
                         <div class="col-md-3 wow fadeIn" data-wow-delay=".25s">
                             <div class="de_count text-center">
-                                <h3 class="timer" data-to="58" data-speed="2500">0</h3>
+                                <h3 class="timer" data-to="25" data-speed="2500">0</h3>
                                 <span>PROJECTS DONE</span>
                             </div>
                         </div>
 
                         <div class="col-md-3 wow fadeIn" data-wow-delay=".5s">
                             <div class="de_count text-center">
-                                <h3 class="timer" data-to="84" data-speed="2500">0</h3>
+                                <h3 class="timer" data-to="35" data-speed="2500">0</h3>
                                 <span>SATISFIED CUSTOMERS</span>
                             </div>
                         </div>
 
                         <div class="col-md-3 wow fadeIn" data-wow-delay=".75s">
                             <div class="de_count text-center">
-                                <h3 class="timer" data-to="3" data-speed="2500">0</h3>
+                                <h3 class="timer" data-to="4" data-speed="2500">0</h3>
                                 <span>YEARS EXPERIENCE</span>
                             </div>
                         </div>
@@ -783,40 +885,45 @@
                             <div class="space-border"></div>
                         </div>
                     </div>
-           
+
 
                     <div class="row">
                         <div class=" col-xs-12 col-sm-12 ">
-                          <div id="portfolio_content_q" class="portfolio-content">
-                              
-                              <ul class="portfolio-filters wow fadeInLeft">
-                                  <li class="active">
-                                  <a class="filter btn btn-sm btn-link" data-group="category_all">All</a>
-                                  </li>
-                                  <li>
-                                        <a class="filter btn btn-sm btn-link" data-group="category_software">Software</a>
-                                    </li>
-                                  <li>
-                                  <a class="filter btn btn-sm btn-link" data-group="category_e-commerce">E-commerce Site</a>
-                                  </li>
-                                  
-                                  <li>
-                                  <a class="filter btn btn-sm btn-link" data-group="category_marketplace">Marketplace</a>
-                                  </li>
-                                  
-                                  <li>
-                                  <a class="filter btn btn-sm btn-link" data-group="category_web_application">Web Application</a>
-                                  </li>
-                                  
-                                  <li>
-                                  <a class="filter btn btn-sm btn-link" data-group="category_showcase">Showcase Sites</a>
-                                  </li>
+                            <div id="portfolio_content_q" class="portfolio-content">
 
-                                  <!-- <li>
+                                <ul class="portfolio-filters wow fadeInLeft">
+                                    <li class="active">
+                                        <a class="filter btn btn-sm btn-link" data-group="category_all">All</a>
+                                    </li>
+                                    <li>
+                                        <a class="filter btn btn-sm btn-link"
+                                            data-group="category_software">Software</a>
+                                    </li>
+                                    <li>
+                                        <a class="filter btn btn-sm btn-link"
+                                            data-group="category_e-commerce">E-commerce Site</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="filter btn btn-sm btn-link"
+                                            data-group="category_marketplace">Marketplace</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="filter btn btn-sm btn-link" data-group="category_web_application">Web
+                                            Application</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="filter btn btn-sm btn-link" data-group="category_showcase">Showcase
+                                            Sites</a>
+                                    </li>
+
+                                    <!-- <li>
                                   <a class="filter btn btn-sm btn-link" data-group="category_blog">Blog</a>
                                   </li> -->
-                                  
-                                  <!-- <li>
+
+                                    <!-- <li>
                                   <a class="filter btn btn-sm btn-link" data-group="category_landing_page">Landing Page</a>
                                   </li>
 
@@ -827,114 +934,132 @@
                                       <a class="filter btn btn-sm btn-link" data-group="category_web3">Web 3</a>
                                   </li> -->
 
-                                  
-                                  
-                              </ul>
-            
-                              <div class="portfolio-grid three-columns shuffle wow fadeInRight" id="card-portfolio">
 
-                                <!-- New Projects -->
 
-                                <figure id="bls" class="item standard" data-groups='["category_all", "category_software"]'>
-                                    <div class="portfolio-item-img">
-                                    <img src="images/bls.png" alt="Full Project 2" title="" />
-                                    <a href="project/bls.html" class="ajax-page-load"></a>
-                                    </div>
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">BANK LEGAL SOFT</h4>
-                                    <span class="category">Software</span>
-                                </figure>
-            
-                                    <figure id="terre_origine" class="item standard" data-groups='["category_all", "category_software"]'>
+                                </ul>
+
+                                <div class="portfolio-grid three-columns shuffle wow fadeInRight" id="card-portfolio">
+
+                                    <!-- New Projects -->
+
+                                    <figure id="bls" class="item standard"
+                                        data-groups='["category_all", "category_software"]'>
                                         <div class="portfolio-item-img">
-                                        <img src="images/sig_unstim.png" alt="Full Project 2" title="" />
-                                        <a href="project/sig_unstim.html" class="ajax-page-load"></a>
+                                            <img src="images/bls.png" alt="Full Project 2" title="" />
+                                            <a href="project/bls.html" class="ajax-page-load"></a>
                                         </div>
                                         <i class="far fa-file-alt"></i>
-                                        <h4 class="name" style="color: white !important; background: blue !important;">SIG UNSTIM</h4>
-                                        <span class="category">Software</span>
-                                    </figure>
-            
-                                    <figure id="terre_origine" class="item standard" data-groups='["category_all", "category_software"]'>
-                                        <div class="portfolio-item-img">
-                                        <img src="images/sig_cpms.png" alt="Full Project 2" title="" />
-                                        <a href="project/sig_cpms.html" class="ajax-page-load"></a>
-                                        </div>
-                                        <i class="far fa-file-alt"></i>
-                                        <h4 class="name" style="color: white !important; background: blue !important;">SIG CPMS</h4>
+                                        <h4 class="name" style="color: white !important; background: blue !important;">
+                                            BANK LEGAL SOFT</h4>
                                         <span class="category">Software</span>
                                     </figure>
 
-
-                                    
-                                    
-                                    <figure id="erp_onab" class="item standard" data-groups='["category_all", "category_software"]'>
+                                    <figure id="terre_origine" class="item standard"
+                                        data-groups='["category_all", "category_software"]'>
                                         <div class="portfolio-item-img">
-                                          <img src="images/erp_onab.png" alt="Full Project 2" title="" />
-                                          <a href="project/erp_onab.html" class="ajax-page-load"></a>
+                                            <img src="images/sig_unstim.png" alt="Full Project 2" title="" />
+                                            <a href="project/sig_unstim.html" class="ajax-page-load"></a>
                                         </div>
                                         <i class="far fa-file-alt"></i>
-                                        <h4 class="name" style="color: white !important; background: blue !important;">ERP ONAB BENIN</h4>
+                                        <h4 class="name" style="color: white !important; background: blue !important;">
+                                            SIG UNSTIM</h4>
                                         <span class="category">Software</span>
                                     </figure>
 
-                                    <figure id="rh_poste" class="item standard" data-groups='["category_all", "category_software"]'>
+                                    <figure id="terre_origine" class="item standard"
+                                        data-groups='["category_all", "category_software"]'>
                                         <div class="portfolio-item-img">
-                                          <img src="images/rh_poste.png" alt="Full Project 2" title="" />
-                                          <a href="project/rh_poste.html" class="ajax-page-load"></a>
+                                            <img src="images/sig_cpms.png" alt="Full Project 2" title="" />
+                                            <a href="project/sig_cpms.html" class="ajax-page-load"></a>
                                         </div>
                                         <i class="far fa-file-alt"></i>
-                                        <h4 class="name" style="color: white !important; background: blue !important;">ERP POSTE BENIN</h4>
-                                        <span class="category">Software</span>
-                                    </figure>
-            
-                                    <figure id="sim_ah" class="item standard" data-groups='["category_all", "category_software"]'>
-                                        <div class="portfolio-item-img">
-                                          <img src="images/sim_ah.png" alt="Full Project 2" title="" />
-                                          <a href="project/sim_ah.html" class="ajax-page-load"></a>
-                                        </div>
-                                        <i class="far fa-file-alt"></i>
-                                        <h4 class="name" style="color: white !important; background: blue !important;">SIM-AH</h4>
+                                        <h4 class="name" style="color: white !important; background: blue !important;">
+                                            SIG CPMS</h4>
                                         <span class="category">Software</span>
                                     </figure>
 
 
-                                    
-            
-                                    <figure id="cdel" class="item standard" data-groups='["category_all", "category_software"]'>
+
+
+                                    <figure id="erp_onab" class="item standard"
+                                        data-groups='["category_all", "category_software"]'>
                                         <div class="portfolio-item-img">
-                                          <img src="images/cdel.png" alt="Full Project 2" title="" />
-                                          <a href="project/cdel.html" class="ajax-page-load"></a>
+                                            <img src="images/erp_onab.png" alt="Full Project 2" title="" />
+                                            <a href="project/erp_onab.html" class="ajax-page-load"></a>
                                         </div>
                                         <i class="far fa-file-alt"></i>
-                                        <h4 class="name" style="color: white !important; background: blue !important;"> SIG CDEL</h4>
+                                        <h4 class="name" style="color: white !important; background: blue !important;">
+                                            ERP ONAB BENIN</h4>
                                         <span class="category">Software</span>
                                     </figure>
-                                    <figure id="terre_origine" class="item standard" data-groups='["category_all", "category_e-commerce"]'>
+
+                                    <figure id="rh_poste" class="item standard"
+                                        data-groups='["category_all", "category_software"]'>
                                         <div class="portfolio-item-img">
-                                        <img src="images/lynia_shop.png" alt="Full Project 2" title="" />
-                                        <a href="project/lynia_shop.html" class="ajax-page-load"></a>
+                                            <img src="images/rh_poste.png" alt="Full Project 2" title="" />
+                                            <a href="project/rh_poste.html" class="ajax-page-load"></a>
                                         </div>
                                         <i class="far fa-file-alt"></i>
-                                        <h4 class="name" style="color: white !important; background: blue !important;">LYNIA SHOP</h4>
+                                        <h4 class="name" style="color: white !important; background: blue !important;">
+                                            ERP POSTE BENIN</h4>
+                                        <span class="category">Software</span>
+                                    </figure>
+
+                                    <figure id="sim_ah" class="item standard"
+                                        data-groups='["category_all", "category_software"]'>
+                                        <div class="portfolio-item-img">
+                                            <img src="images/sim_ah.png" alt="Full Project 2" title="" />
+                                            <a href="project/sim_ah.html" class="ajax-page-load"></a>
+                                        </div>
+                                        <i class="far fa-file-alt"></i>
+                                        <h4 class="name" style="color: white !important; background: blue !important;">
+                                            SIM-AH</h4>
+                                        <span class="category">Software</span>
+                                    </figure>
+
+
+
+
+                                    <figure id="cdel" class="item standard"
+                                        data-groups='["category_all", "category_software"]'>
+                                        <div class="portfolio-item-img">
+                                            <img src="images/cdel.png" alt="Full Project 2" title="" />
+                                            <a href="project/cdel.html" class="ajax-page-load"></a>
+                                        </div>
+                                        <i class="far fa-file-alt"></i>
+                                        <h4 class="name" style="color: white !important; background: blue !important;">
+                                            SIG CDEL</h4>
+                                        <span class="category">Software</span>
+                                    </figure>
+                                    <figure id="terre_origine" class="item standard"
+                                        data-groups='["category_all", "category_e-commerce"]'>
+                                        <div class="portfolio-item-img">
+                                            <img src="images/lynia_shop.png" alt="Full Project 2" title="" />
+                                            <a href="project/lynia_shop.html" class="ajax-page-load"></a>
+                                        </div>
+                                        <i class="far fa-file-alt"></i>
+                                        <h4 class="name" style="color: white !important; background: blue !important;">
+                                            LYNIA SHOP</h4>
                                         <span class="category">E-commerce</span>
                                     </figure>
-            
-                                    
-                                
-                                <!-- End New Projects -->
-            
-                                <figure id="mayday_phone" class="item standard" data-groups='["category_all", "category_e-commerce"]'>
-                                  <div class="portfolio-item-img">
-                                    <img src="images/mayday_phone.png" alt="Full Project 2" title="" />
-                                    <a href="project/mayday_phone.html" class="ajax-page-load"></a>
-                                  </div>
-                                  <i class="far fa-file-alt"></i>
-                                  <h4 class="name" style="color: white !important; background: blue !important;">MAYDAY PHONE</h4>
-                                  <span class="category">E-commerce</span>
-                                </figure>
 
-                                <!-- <figure id="benin_tourism" class="item standard" data-groups='["category_all", "category_marketplace"]'>
+
+
+                                    <!-- End New Projects -->
+
+                                    <figure id="mayday_phone" class="item standard"
+                                        data-groups='["category_all", "category_e-commerce"]'>
+                                        <div class="portfolio-item-img">
+                                            <img src="images/mayday_phone.png" alt="Full Project 2" title="" />
+                                            <a href="project/mayday_phone.html" class="ajax-page-load"></a>
+                                        </div>
+                                        <i class="far fa-file-alt"></i>
+                                        <h4 class="name" style="color: white !important; background: blue !important;">
+                                            MAYDAY PHONE</h4>
+                                        <span class="category">E-commerce</span>
+                                    </figure>
+
+                                    <!-- <figure id="benin_tourism" class="item standard" data-groups='["category_all", "category_marketplace"]'>
                                   <div class="portfolio-item-img">
                                     <img src="images/benintourism.png" alt="Full Project 2" title="" />
                                     <a href="project/benin_tourism.html" class="ajax-page-load"></a>
@@ -943,38 +1068,44 @@
                                   <h4 class="name" style="color: white !important; background: blue !important;">BENIN TOURISM</h4>
                                   <span class="category">Marketplace</span>
                                 </figure> -->
-                                
-                                <figure id="ixioxi" class="item standard" data-groups='["category_all", "category_web_application"]'>
-                                  <div class="portfolio-item-img">
-                                    <img src="images/scan8.png" alt="Full Project 2" title="" />
-                                    <a href="project/ixioxi.html" class="ajax-page-load"></a>
-                                  </div>
-                                  <i class="far fa-file-alt"></i>
-                                  <h4 class="name" style="color: white !important; background: blue !important;">IXIOXI</h4>
-                                  <span class="category">Web Application</span>
-                                </figure>
-            
-                                <figure id="lynia_delivery_express" class="item standard" data-groups='["category_all", "category_web_application"]'>
-                                    <div class="portfolio-item-img">
-                                    <img src="images/lynia_delivery.png" alt="Full Project 2" title="" />
-                                    <a href="project/lynia_delivery_express.html" class="ajax-page-load"></a>
-                                    </div>
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">LYNIA DELIVERY EXPRESS</h4>
-                                    <span class="category">Wep Application</span>
-                                </figure>
-            
-                                <figure id="terre_origine" class="item standard" data-groups='["category_all", "category_showcase"]'>
-                                    <div class="portfolio-item-img">
-                                      <img src="images/terre_origine.png" alt="Full Project 2" title="" />
-                                      <a href="project/terre_origine.html" class="ajax-page-load"></a>
-                                    </div>
-                                    <i class="far fa-file-alt"></i>
-                                    <h4 class="name" style="color: white !important; background: blue !important;">TERRE ORIGINE</h4>
-                                    <span class="category">Showcase</span>
-                                </figure>
-                                
-                                <!-- 
+
+                                    <figure id="ixioxi" class="item standard"
+                                        data-groups='["category_all", "category_web_application"]'>
+                                        <div class="portfolio-item-img">
+                                            <img src="images/scan8.png" alt="Full Project 2" title="" />
+                                            <a href="project/ixioxi.html" class="ajax-page-load"></a>
+                                        </div>
+                                        <i class="far fa-file-alt"></i>
+                                        <h4 class="name" style="color: white !important; background: blue !important;">
+                                            IXIOXI</h4>
+                                        <span class="category">Web Application</span>
+                                    </figure>
+
+                                    <figure id="lynia_delivery_express" class="item standard"
+                                        data-groups='["category_all", "category_web_application"]'>
+                                        <div class="portfolio-item-img">
+                                            <img src="images/lynia_delivery.png" alt="Full Project 2" title="" />
+                                            <a href="project/lynia_delivery_express.html" class="ajax-page-load"></a>
+                                        </div>
+                                        <i class="far fa-file-alt"></i>
+                                        <h4 class="name" style="color: white !important; background: blue !important;">
+                                            LYNIA DELIVERY EXPRESS</h4>
+                                        <span class="category">Wep Application</span>
+                                    </figure>
+
+                                    <figure id="terre_origine" class="item standard"
+                                        data-groups='["category_all", "category_showcase"]'>
+                                        <div class="portfolio-item-img">
+                                            <img src="images/terre_origine.png" alt="Full Project 2" title="" />
+                                            <a href="project/terre_origine.html" class="ajax-page-load"></a>
+                                        </div>
+                                        <i class="far fa-file-alt"></i>
+                                        <h4 class="name" style="color: white !important; background: blue !important;">
+                                            TERRE ORIGINE</h4>
+                                        <span class="category">Showcase</span>
+                                    </figure>
+
+                                    <!-- 
                                 <figure id="aziza" class="item standard" data-groups='["category_all", "category_e-commerce"]'>
                                         <div class="portfolio-item-img">
                                           <img src="images/aziza.png" alt="Full Project 2" title="" />
@@ -1197,15 +1328,15 @@
                                   <h4 class="name" style="color: white !important; background: blue !important;">SMART CONTACT</h4>
                                   <span class="category">Web Application</span>
                                 </figure> -->
-            
-                              </div>
+
+                                </div>
 
 
-                            <!-- <div style="text-align: center;">
+                                <!-- <div style="text-align: center;">
                                 <a href="#" id="card-btn" target="_blank" class="btn-main wow fadeInUp">SHOW MORE</a>
                             </div> -->
 
-                          </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1217,7 +1348,7 @@
                     display: none;
                   }
             </style> -->
-                  <!-- <div id="image-gallery">
+            <!-- <div id="image-gallery">
                       <img src="https://unsplash.it/700" alt="Image" class="img-fluid">
                       <img src="https://unsplash.it/750" alt="Image" class="img-fluid">
                       <img src="https://unsplash.it/800" alt="Image" class="img-fluid">
@@ -1236,232 +1367,268 @@
             <section id="customers">
                 <div id="page_container" class="container">
                     <div id="main" class="site-main">
-                      <div id="main-content" class="single-page-content">
-                        <div id="primary" class="content-area">
-                          <div  class="page-content site-content single-post" role="main">
-                            <div class="row">
-                              <div class="col-xs-12 col-sm-12">
-                                <div class="p-20"></div>
-              
-                                <div class="col-md-12 text-center wow fadeInUp">
-                                    <h2>Customers</h2>
-                                    <div class="space-border"></div>
-                                </div>
-              
-                                <div id="clients_1" class="clients owl-carousel wow fadeInUp" data-mobile-items="1" data-tablet-items="3"
-                                  data-items="6">
-                                  <div class="client-block">
-                                    <a href="#" target="_blank" title="Golden Grid">
-                                      <img src="./img/clients/aziza.png" alt="Golden Grid">
-                                    </a>
-                                  </div>
-              
-                                  <div class="client-block">
-                                    <a href="#" target="_blank" title="WordPress">
-                                      <img src="./img/clients/gkel.png" alt="WordPress">
-                                    </a>
-                                  </div>
-              
-                                  <div class="client-block">
-                                    <a href="#" target="_blank" title="LifeGuard">
-                                      <img src="./img/clients/kaliza.png" alt="LifeGuard">
-                                    </a>
-                                  </div>
-              
-                                  <div class="client-block">
-                                    <a href="#" target="_blank" title="WordPress">
-                                      <img src="./img/clients/karibe.png" alt="WordPress">
-                                    </a>
-                                  </div>
-              
-                                  <div class="client-block">
-                                    <a href="#" target="_blank" title="Sweety">
-                                      <img src="./img/clients/mtavrx.png" alt="Sweety">
-                                    </a>
-                                  </div>
+                        <div id="main-content" class="single-page-content">
+                            <div id="primary" class="content-area">
+                                <div class="page-content site-content single-post" role="main">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12">
+                                            <div class="p-20"></div>
 
-                                  <div class="client-block">
-                                    <a href="#" target="_blank" title="Sweety">
-                                      <img src="./img/clients/benin_tourism.png" alt="Sweety">
-                                    </a>
-                                  </div>
+                                            <div class="col-md-12 text-center wow fadeInUp">
+                                                <h2>Customers</h2>
+                                                <div class="space-border"></div>
+                                            </div>
 
-                                  <div class="client-block">
-                                    <a href="#" target="_blank" title="Sweety">
-                                      <img src="./img/clients/ixioxi.png" alt="Sweety">
-                                    </a>
-                                  </div>
+                                            <div id="clients_1" class="clients owl-carousel wow fadeInUp"
+                                                data-mobile-items="1" data-tablet-items="3" data-items="6">
 
-                                  <div class="client-block">
-                                    <a href="#" target="_blank" title="WordPress">
-                                      <img src="./img/clients/libourne.jpg" alt="WordPress">
-                                    </a>
-                                  </div>
-              
-                                  <div class="client-block">
-                                    <a href="#" target="_blank" title="WordPress">
-                                      <img src="./img/clients/logo.png" alt="WordPress">
-                                    </a>
-                                  </div>
-              
-                                  <div id="testimonials" class="client-block">
-                                    <a href="#" target="_blank" title="WordPress">
-                                      <img src="./img/clients/eatcoin.png" alt="WordPress">
-                                    </a>
-                                  </div>
+                                                <!-- <div class="client-block">
+                                                    <a href="#" target="_blank" title="Golden Grid">
+                                                        <img src="./img/clients/marmeat.jpg" alt="Golden Grid">
+                                                    </a>
+                                                </div> -->
+                                                <div class="client-block">
+                                                    <a href="#" target="_blank" title="Golden Grid">
+                                                        <img src="./img/clients/locapay.png" alt="Golden Grid">
+                                                    </a>
+                                                </div>
+                                                <div class="client-block">
+                                                    <a href="#" target="_blank" title="Golden Grid">
+                                                        <img src="./img/clients/muxt.jpeg" alt="Golden Grid">
+                                                    </a>
+                                                </div>
+                                                <div class="client-block">
+                                                    <a href="#" target="_blank" title="Golden Grid">
+                                                        <img src="./img/clients/afrikskills.jpeg" alt="Golden Grid">
+                                                    </a>
+                                                </div>
+                                                <div class="client-block">
+                                                    <a href="#" target="_blank" title="Golden Grid">
+                                                        <img src="./img/clients/cosit.png" alt="Golden Grid">
+                                                    </a>
+                                                </div>
 
-                                  
+                                                <div class="client-block">
+                                                    <a href="#" target="_blank" title="Golden Grid">
+                                                        <img src="./img/clients/aziza.png" alt="Golden Grid">
+                                                    </a>
+                                                </div>
+
+                                                <div class="client-block">
+                                                    <a href="#" target="_blank" title="WordPress">
+                                                        <img src="./img/clients/gkel.png" alt="WordPress">
+                                                    </a>
+                                                </div>
+
+                                                <div class="client-block">
+                                                    <a href="#" target="_blank" title="LifeGuard">
+                                                        <img src="./img/clients/kaliza.png" alt="LifeGuard">
+                                                    </a>
+                                                </div>
+
+                                                <div class="client-block">
+                                                    <a href="#" target="_blank" title="WordPress">
+                                                        <img src="./img/clients/karibe.png" alt="WordPress">
+                                                    </a>
+                                                </div>
+
+                                                <div class="client-block">
+                                                    <a href="#" target="_blank" title="Sweety">
+                                                        <img src="./img/clients/mtavrx.png" alt="Sweety">
+                                                    </a>
+                                                </div>
+
+                                                <div class="client-block">
+                                                    <a href="#" target="_blank" title="Sweety">
+                                                        <img src="./img/clients/benin_tourism.png" alt="Sweety">
+                                                    </a>
+                                                </div>
+
+                                                <div class="client-block">
+                                                    <a href="#" target="_blank" title="Sweety">
+                                                        <img src="./img/clients/ixioxi.png" alt="Sweety">
+                                                    </a>
+                                                </div>
+
+                                                <div class="client-block">
+                                                    <a href="#" target="_blank" title="WordPress">
+                                                        <img src="./img/clients/libourne.jpg" alt="WordPress">
+                                                    </a>
+                                                </div>
+
+                                                <div class="client-block">
+                                                    <a href="#" target="_blank" title="WordPress">
+                                                        <img src="./img/clients/logo.png" alt="WordPress">
+                                                    </a>
+                                                </div>
+
+                                                <div id="testimonials" class="client-block">
+                                                    <a href="#" target="_blank" title="WordPress">
+                                                        <img src="./img/clients/eatcoin.png" alt="WordPress">
+                                                    </a>
+                                                </div>
 
 
-                                  <div class="client-block">
-                                    <a href="#" target="_blank" title="Sweety">
-                                      <img src="./images/amnesty_logo.png" alt="Sweety">
-                                    </a>
-                                  </div>
 
-                                  <div id="testimonials" class="client-block">
-                                    <a href="#" target="_blank" title="WordPress">
-                                      <img src="./images/bossalini_logo.svg" alt="WordPress">
-                                    </a>
-                                  </div>
-                                  <div class="client-block">
-                                    <a href="#" target="_blank" title="WordPress">
-                                      <img src="./images/logo-smart.png" alt="WordPress">
-                                    </a>
-                                  </div>
 
-                                  <div class="client-block">
-                                    <a href="#" target="_blank" title="WordPress">
-                                      <img src="./images/hcori_logo.png" alt="WordPress">
-                                    </a>
-                                  </div>
+                                                <div class="client-block">
+                                                    <a href="#" target="_blank" title="Sweety">
+                                                        <img src="./images/amnesty_logo.png" alt="Sweety">
+                                                    </a>
+                                                </div>
 
-                                  <div class="client-block">
-                                    <a href="#" target="_blank" title="Sweety">
-                                      <img src="./images/system_io.ico" alt="Sweety">
-                                    </a>
-                                  </div>
+                                                <div id="testimonials" class="client-block">
+                                                    <a href="#" target="_blank" title="WordPress">
+                                                        <img src="./images/bossalini_logo.svg" alt="WordPress">
+                                                    </a>
+                                                </div>
+                                                <div class="client-block">
+                                                    <a href="#" target="_blank" title="WordPress">
+                                                        <img src="./images/logo-smart.png" alt="WordPress">
+                                                    </a>
+                                                </div>
 
-                                  <div class="client-block">
-                                    <a href="#" target="_blank" title="WordPress">
-                                      <img src="./images/wazemi_logo.png" alt="WordPress">
-                                    </a>
-                                  </div>
-              
-                                  
-              
-                                  <div id="testimonials" class="client-block">
-                                    <a href="#" target="_blank" title="WordPress">
-                                      <img src="./images/mes_plaques_logo.png" alt="WordPress">
-                                    </a>
-                                  </div>
+                                                <div class="client-block">
+                                                    <a href="#" target="_blank" title="WordPress">
+                                                        <img src="./images/hcori_logo.png" alt="WordPress">
+                                                    </a>
+                                                </div>
 
-                                  
-              
-                                </div>
-              
-                                <div class="p-40"></div>
-              
-                                <div class="col-md-12 text-center wow fadeInUp">
-                                    <h2>Testimonials</h2>
-                                    <div class="space-border"></div>
-                                </div>
-              
-                                <div id="testimonials_1" class="testimonials owl-carousel" data-mobile-items="1" data-tablet-items="2"
-                                  data-items="2">
-                                  <div class="testimonial-item wow fadeInDown">
-                                    <div class="testimonial-content">
-                                      <div class="testimonial-picture">
-                                        <img src="./img/clients/aziza.png" alt="Billy Adams" />
-                                      </div>
-              
-                                      <div class="testimonial-text">
-                                        <p>As a perfectionist, it's hard for me to find people who really live up to my expectations.
-                                            my expectations... but Julian exceeds anything you can imagine in terms of
-                                            skills. His availability and responsiveness make him a professional. I recommend him
-                                            at 200%.</p>
-                                      </div>
+                                                <div class="client-block">
+                                                    <a href="#" target="_blank" title="Sweety">
+                                                        <img src="./images/system_io.ico" alt="Sweety">
+                                                    </a>
+                                                </div>
 
-                                      <div class="testimonial-author-info">
-                                        <h5 class="testimonial-author">Thierry</h5>
-                                        <p class="testimonial-firm">BLUESQUARE</p>
-                                      </div>
-              
-                                      <div class="testimonial-icon">
-                                        <i class="fa fa-quote-left"></i>
-                                      </div>
-              
-                                      <div class="testimonial-icon-big">
-                                        <i class="fa fa-quote-right"></i>
-                                      </div>
+                                                <div class="client-block">
+                                                    <a href="#" target="_blank" title="WordPress">
+                                                        <img src="./images/wazemi_logo.png" alt="WordPress">
+                                                    </a>
+                                                </div>
+
+
+
+                                                <div id="testimonials" class="client-block">
+                                                    <a href="#" target="_blank" title="WordPress">
+                                                        <img src="./images/mes_plaques_logo.png" alt="WordPress">
+                                                    </a>
+                                                </div>
+
+
+
+                                            </div>
+
+                                            <div class="p-40"></div>
+
+                                            <div class="col-md-12 text-center wow fadeInUp">
+                                                <h2>Testimonials</h2>
+                                                <div class="space-border"></div>
+                                            </div>
+
+                                            <div id="testimonials_1" class="testimonials owl-carousel"
+                                                data-mobile-items="1" data-tablet-items="2" data-items="2">
+                                                <div class="testimonial-item wow fadeInDown">
+                                                    <div class="testimonial-content">
+                                                        <div class="testimonial-picture">
+                                                            <img src="./img/clients/aziza.png" alt="Billy Adams" />
+                                                        </div>
+
+                                                        <div class="testimonial-text">
+                                                            <p>As a perfectionist, it's hard for me to find people who
+                                                                really live up to my expectations.
+                                                                my expectations... but Julian exceeds anything you can
+                                                                imagine in terms of
+                                                                skills. His availability and responsiveness make him a
+                                                                professional. I recommend him
+                                                                at 200%.</p>
+                                                        </div>
+
+                                                        <div class="testimonial-author-info">
+                                                            <h5 class="testimonial-author">Thierry</h5>
+                                                            <p class="testimonial-firm">BLUESQUARE</p>
+                                                        </div>
+
+                                                        <div class="testimonial-icon">
+                                                            <i class="fa fa-quote-left"></i>
+                                                        </div>
+
+                                                        <div class="testimonial-icon-big">
+                                                            <i class="fa fa-quote-right"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="testimonial-item wow fadeInDown">
+                                                    <div class="testimonial-content">
+                                                        <div class="testimonial-picture">
+                                                            <img src="./img/clients/mtavrx.png" alt="Gary Johnson" />
+                                                        </div>
+
+                                                        <div class="testimonial-text">
+                                                            <p>For the first time I am really surprised and very happy
+                                                                with this new adventure
+                                                                which opens and offers itself to me thanks to Julian!
+                                                                Who realized my request and who is very patient and
+                                                                and listened to me! I recommend quick turnaround! See
+                                                                you for the next project! And thank you to
+                                                                the team.</p>
+                                                        </div>
+
+                                                        <div class="testimonial-author-info">
+                                                            <h5 class="testimonial-author">Géraud YESSIN</h5>
+                                                            <p class="testimonial-firm">HORIZON PLUS</p>
+                                                        </div>
+
+                                                        <div class="testimonial-icon">
+                                                            <i class="fa fa-quote-left"></i>
+                                                        </div>
+
+                                                        <div class="testimonial-icon-big">
+                                                            <i class="fa fa-quote-right"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="testimonial-item wow fadeInDown">
+
+                                                    <div class="testimonial-content">
+                                                        <div class="testimonial-picture">
+                                                            <img src="./img/clients/ixioxi.png" alt="Daniel Pringle" />
+                                                        </div>
+
+                                                        <div class="testimonial-text">
+                                                            <p>In search of a professional, I recommend Julian without
+                                                                hesitation 100% for any project
+                                                                requiring a high level of expertise. His availability is
+                                                                constant, and his ability to solve
+                                                                to solve problems quickly make him a real asset to any
+                                                                team.</p>
+                                                        </div>
+
+                                                        <div class="testimonial-author-info">
+                                                            <h5 class="testimonial-author">Alexis DJISSOU</h5>
+                                                            <p class="testimonial-firm">JCI Cotonou</p>
+                                                        </div>
+
+                                                        <div class="testimonial-icon">
+                                                            <i class="fa fa-quote-left"></i>
+                                                        </div>
+
+                                                        <div class="testimonial-icon-big">
+                                                            <i class="fa fa-quote-right"></i>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="p-40"></div>
+
+                                        </div>
                                     </div>
-                                  </div>
-              
-                                  <div class="testimonial-item wow fadeInDown">
-                                    <div class="testimonial-content">
-                                      <div class="testimonial-picture">
-                                        <img src="./img/clients/mtavrx.png" alt="Gary Johnson" />
-                                      </div>
-              
-                                      <div class="testimonial-text">
-                                        <p>For the first time I am really surprised and very happy with this new adventure
-                                            which opens and offers itself to me thanks to Julian! Who realized my request and who is very patient and
-                                            and listened to me! I recommend quick turnaround! See you for the next project! And thank you to
-                                            the team.</p>
-                                      </div>
-              
-                                      <div class="testimonial-author-info">
-                                        <h5 class="testimonial-author">Géraud YESSIN</h5>
-                                        <p class="testimonial-firm">HORIZON PLUS</p>
-                                      </div>
-              
-                                      <div class="testimonial-icon">
-                                        <i class="fa fa-quote-left"></i>
-                                      </div>
-              
-                                      <div class="testimonial-icon-big">
-                                        <i class="fa fa-quote-right"></i>
-                                      </div>
-                                    </div>
-                                  </div>
-              
-                                  <div class="testimonial-item wow fadeInDown">
-              
-                                    <div class="testimonial-content">
-                                      <div class="testimonial-picture">
-                                        <img src="./img/clients/ixioxi.png" alt="Daniel Pringle" />
-                                      </div>
-              
-                                      <div class="testimonial-text">
-                                        <p>In search of a professional, I recommend Julian without hesitation 100% for any project
-                                            requiring a high level of expertise. His availability is constant, and his ability to solve
-                                            to solve problems quickly make him a real asset to any team.</p>
-                                      </div>
-              
-                                      <div class="testimonial-author-info">
-                                        <h5 class="testimonial-author">Alexis DJISSOU</h5>
-                                        <p class="testimonial-firm">JCI Cotonou</p>
-                                      </div>
-              
-                                      <div class="testimonial-icon">
-                                        <i class="fa fa-quote-left"></i>
-                                      </div>
-              
-                                      <div class="testimonial-icon-big">
-                                        <i class="fa fa-quote-right"></i>
-                                      </div>
-                                    </div>
-              
-                                  </div>
                                 </div>
-              
-                                <div class="p-40"></div>
-              
-                              </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
                     </div>
                 </div>
             </section>
@@ -1545,8 +1712,10 @@
                     <div class="col-md-3">
                         <div class="social-icons">
                             <a target="_blank" href="https://wa.me/96135159"><i class="fa fa-whatsapp fa-lg"></i></a>
-                            <a target="_blank" href="https://github.com/webcreation-dev"><i class="fa fa-github fa-lg"></i></a>
-                            <a target="_blank" href="https://bj.linkedin.com/in/julian-adjibi-05a92824b"><i class="fa fa-linkedin fa-lg"></i></a>
+                            <a target="_blank" href="https://github.com/webcreation-dev"><i
+                                    class="fa fa-github fa-lg"></i></a>
+                            <a target="_blank" href="https://bj.linkedin.com/in/julian-adjibi-05a92824b"><i
+                                    class="fa fa-linkedin fa-lg"></i></a>
                         </div>
                     </div>
                 </div>
@@ -1617,27 +1786,26 @@
             $("#image-gallery img:lt(4)").show();
 
             // When the gallery button is clicked
-            $("#gallery-btn").on('click', function(event) {
-            // Prevent default behavior
-            event.preventDefault();
-            // All of the hidden images
-            var $hidden = $("#image-gallery img:hidden");
-            // Show the next four images
-            $($hidden).slice(0, 4).fadeIn(800);
-            // If the length of $hidden is 4 then hide the button
-            if ($hidden.length == 4) {
-                $(this).fadeOut();
-            }
+            $("#gallery-btn").on('click', function (event) {
+                // Prevent default behavior
+                event.preventDefault();
+                // All of the hidden images
+                var $hidden = $("#image-gallery img:hidden");
+                // Show the next four images
+                $($hidden).slice(0, 4).fadeIn(800);
+                // If the length of $hidden is 4 then hide the button
+                if ($hidden.length == 4) {
+                    $(this).fadeOut();
+                }
             });
 
         });
     </script>
 
-    
+
 
 </body>
 
 </html>
 
 <!-- Ajouter BANK LEGAL SOFT -->
-
